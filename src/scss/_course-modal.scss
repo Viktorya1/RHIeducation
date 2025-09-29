@@ -1,0 +1,117 @@
+.modal-content {
+  padding: 4rem 4rem;
+  border-radius: 1.5rem;
+}
+
+.modal {
+  --bs-modal-width: 94rem;
+}
+
+.btn-close {
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem;
+  filter: invert(12%) sepia(38%) saturate(1473%) hue-rotate(183deg)
+    brightness(83%) contrast(101%);
+  opacity: 0.8;
+  --bs-btn-close-focus-shadow: none;
+}
+
+.btn-close:hover {
+  filter: invert(12%) sepia(38%) saturate(1473%) hue-rotate(183deg)
+    brightness(83%) contrast(101%);
+  opacity: 0.8;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-info-hours {
+  background-color: #f1f0f0;
+  color: $color-blue;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.download-course {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: $color-blue;
+}
+
+.modal-course-description {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-blue;
+  max-width: 70%;
+}
+
+.modal-section-title {
+  color: $color-orange;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.aud-item {
+  background-color: $color-light-blue;
+  border-radius: 1.5rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.8rem 8rem;
+}
+
+.modal-text {
+  font-size: 2rem;
+  color: $color-blue;
+  margin-bottom: 1rem;
+}
+
+.modal-advantage {
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+.certificate-img {
+  width: 40%;
+}
+
+@media (max-width: 730px){
+  .advantage-modal-text{
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 576px){
+  .modal-advantage{
+    padding: 5rem 1rem 1rem 1rem;
+  }
+  .advantage-modal-text{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px){
+  .modal-advantage{
+    padding: 4rem 1rem 1rem 1rem;
+  }
+  .advantage-modal-text{
+    font-size: 1.7rem;
+  }
+  .modal-course-description{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 420px){
+  .modal-advantage{
+    padding: 3rem 1rem 1rem 1rem;
+  }
+}

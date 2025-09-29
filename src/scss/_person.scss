@@ -1,0 +1,184 @@
+.section-person-info {
+  background-image: url(../img/person/person-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1260/263;
+  box-sizing: border-box;
+}
+
+.person-info-wrapper {
+  margin: 0 auto;
+  max-width: 40rem;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+.avatar {
+  width: 13.8rem;
+}
+
+.person-info {
+  font-size: 2.2rem;
+}
+
+.person-courses-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 1%;
+}
+
+.person-course {
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 620/240;
+  box-sizing: border-box;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1%;
+  width: 49%;
+}
+
+.person-course-1 {
+  background-image: url(../img/person/course-1.png);
+}
+
+.person-course-2 {
+  background-image: url(../img/person/course-2.png);
+}
+
+.person-course-3 {
+  background-image: url(../img/person/course-3.png);
+}
+
+.person-course-4 {
+  background-image: url(../img/person/course-4.png);
+}
+
+.person-course-5 {
+  background-image: url(../img/person/course-5.png);
+}
+
+.person-course-6 {
+  background-image: url(../img/person/course-6.png);
+}
+
+.person-course-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: white;
+  max-width: 33.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.person-course-hours {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.person-btn-wrapper {
+  text-decoration: none;
+  width: 25.3rem;
+  display: inline-block;
+}
+
+.person-course-progress {
+  width: 58%;
+  margin-bottom: 2%;
+}
+
+.person-progress-info {
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.person-progress {
+  margin-bottom: 0.5rem;
+}
+
+.person-progress-bar {
+  background-color: $color-orange;
+}
+
+@media (max-width: 1400px) {
+  .person-course-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .section-person-info {
+    background-image: url(../img/person/person-background-mini.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 241/100;
+    box-sizing: border-box;
+  }
+  .person-info-wrapper {
+    max-width: 47%;
+    height: 100%;
+    margin: auto auto;
+    padding: 0;
+  }
+  .avatar {
+    width: 16rem;
+  }
+  .person-info {
+    font-size: 3rem;
+  }
+  .person-course {
+    width: 80%;
+    margin: 0 auto 1% auto;
+  }
+  .person-course-title {
+    font-size: 2.5rem;
+    max-width: 36rem;
+  }
+  .person-course-hours {
+    font-size: 2rem;
+  }
+  .person-progress-info {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .person-course {
+    width: 90%;
+  }
+  .person-info-wrapper {
+    max-width: 52%;
+  }
+}
+
+@media (max-width: 460px) {
+  .person-course {
+    width: 100%;
+  }
+  .person-info {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .avatar {
+    width: 14rem;
+  }
+  .person-info-wrapper {
+    max-width: 57%;
+  }
+}
+
+@media (max-width: 400px) {
+  .person-course-title {
+    font-size: 2.2rem;
+  }
+  .person-course-hours {
+    font-size: 1.7rem;
+  }
+}

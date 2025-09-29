@@ -1,0 +1,56 @@
+.header-nav{
+    background-color: $color-blue;
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 1.7rem 2.4rem;
+    max-height: 5.5rem;
+}
+
+.header-nav-link {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-icon{
+    width: 2.2rem;
+    cursor: pointer;
+}
+
+.icon-btn{
+  background: none;
+  border: none;
+}
+
+.popover-menu{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.popover-menu a{
+  text-decoration: none;
+  color: $color-blue;
+}
+
+.popover {
+    border: 1px solid #e0e0e0;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 730px){
+  .header-logo{
+    width: 100px;
+  }
+  .header-nav-link{
+    font-size: 2.5rem;
+  }
+  .header-icon{
+    width: 2.6rem;
+  }
+  .header-nav{
+    max-height: 6rem;;
+  }
+}

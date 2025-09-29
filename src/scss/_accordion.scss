@@ -1,0 +1,59 @@
+.accordion-item {
+  background-color: #f1f0f0;
+  color: #003462;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  padding: 1.5rem 2.3rem;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+}
+
+.accordion-item:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-body {
+  padding: 0;
+  padding-top: 1rem;
+}
+
+.accordion-button {
+  width: 100%;
+  text-align: start;
+  background: none;
+  font-size: 2rem;
+  color: $color-blue;
+  padding: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
+.accordion-button::after {
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem;
+  filter: invert(54%) sepia(85%) saturate(1470%) hue-rotate(353deg)
+    brightness(101%) contrast(101%);
+}
+
+.course-accordion-item{
+  border: 1px solid $color-blue;
+  color: #003462;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  padding: 1.5rem 2.3rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}

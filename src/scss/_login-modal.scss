@@ -1,0 +1,37 @@
+.login-title{
+    margin: auto auto auto auto;
+}
+
+.login-btn-close{
+    margin: 0 !important;
+}
+
+.login-form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.login-href {
+  color: #496c8d;
+  font-size: 1.8rem;
+}
+
+.login-text {
+  font-size: 1.8rem;
+  color: #00274a;
+  text-align: center;
+}
+
+.login-actions {
+  margin: 0 auto;
+}
+
+.login-btn{
+    margin: 2.5rem auto 1rem auto;
+}
+
+@media (max-width: 574px){
+    .login-input{
+      font-size: 2rem;
+    }
+}

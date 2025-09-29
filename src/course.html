@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo/mini-logo.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Основы сварочного производства</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <header
+      class="container d-flex justify-content-start gap-40 align-items-center p-0 mb-20 mt-3"
+    >
+      <a href="main.html"
+        ><img src="img/logo/logo.png" alt="logo" class="logo header-logo"
+      /></a>
+      <div class="header-nav d-flex justify-content-between align-items-center">
+        <a href="main.html" class="header-nav-link">Все курсы</a>
+        <div class="d-flex gap-25">
+          <a href="person.html">
+            <img
+              src="img/svg/avatar-icon.svg"
+              alt="avatar"
+              class="header-icon"
+            />
+          </a>
+          <button
+            type="button"
+            class="icon-btn"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-html="true"
+            data-bs-content="
+            <div class='popover-menu'>
+            <a href='#' class='popover-link'>Настройки профиля</a>
+            <a href='main.html' class='popover-link'>Выйти из аккаунта</a>
+        </div>
+            "
+          >
+            <img src="img/svg/options.svg" alt="options" class="header-icon" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="container section-info-course mb-20">
+      <div>
+        <h2 class="course-main-title">Основы сварочного производства</h2>
+        <p class="course-info-text">
+          Обновить и систематизировать знания сотрудников в области сварочного
+          производства и материаловедения, актуальных отраслевых нормативных
+          документов и стандартов, рассмотреть перспективные тренды отрасли.
+        </p>
+      </div>
+      <div class="specific-course-progress">
+              <div
+                class="progress person-progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="73"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar person-progress-bar"
+                  style="width: 73%"
+                ></div>
+              </div>
+              <div class="specific-course-progress-info">
+                <p>73%</p>
+                <p>123/168</p>
+              </div>
+            </div>
+    </section>
+    <section class="container p-0 mb-20">
+        <h2 class="section-title">Модули</h2>
+        <div class="accordion">
+          <div class="course-accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsOne"
+                aria-expanded="true"
+                aria-controls="collapseQuestionsOne"
+              >
+                1. Введение в сварочное производство
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Тут контент
+              </div>
+            </div>
+          </div>
+          <div class="course-accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsTwo"
+                aria-expanded="false"
+                aria-controls="collapseQuestionsTwo"
+              >
+                2. Основные методы сварки
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Тут контент
+              </div>
+            </div>
+          </div>
+          <div class="course-accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsThree"
+                aria-expanded="false"
+                aria-controls="collapseQuestionsThree"
+              >
+                3. Материаловедение в сварочном производстве
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Тут контент
+              </div>
+            </div>
+          </div>
+          <div class="course-accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsFour"
+                aria-expanded="false"
+                aria-controls="collapseQuestionsFour"
+              >
+                4. Контроль качества
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Тут контент
+              </div>
+            </div>
+          </div>
+          <div class="course-accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsFive"
+                aria-expanded="false"
+                aria-controls="collapseQuestionsFive"
+              >
+                5. Нормативные документы и стандарты
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Тут контент
+              </div>
+            </div>
+          </div>
+          <div class="course-accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsSix"
+                aria-expanded="false"
+                aria-controls="collapseQuestionsSix"
+              >
+                6. Современные тренды в сварочном производстве
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Тут контент
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <section class="container section-footer">
+        <div class="d-flex justify-content-between">
+          <p class="footer-text">
+            ООО «РХИ» — образовательные <br />
+            программы в сфере <br />
+            строительства
+          </p>
+          <div class="d-flex flex-column gap-3">
+            <p class="footer-text semibold-text">Контакты</p>
+            <p class="footer-text">
+              +7 (495) 933 95 61<br />rhi.edu2025@gmail.com
+            </p>
+            <p class="footer-text">г. Москва, ул. Ивана Франко, д. 8</p>
+          </div>
+        </div>
+        <p class="footer-text footer-center-text">© ООО «РХИ», 2025</p>
+      </section>
+    </footer>
+</body>
+</html>

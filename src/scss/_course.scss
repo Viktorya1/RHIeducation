@@ -1,0 +1,36 @@
+.section-info-course {
+  background-image: url(../img/course/course-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1260/288;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-main-title {
+  font-size: 3.3rem;
+  font-weight: 700;
+  max-width: 50%;
+  margin-bottom: 1rem;
+}
+
+.course-info-text {
+  font-size: 1.8rem;
+  max-width: 50%;
+  font-weight: 500;
+}
+
+.specific-course-progress{
+    width: 50%;
+}
+
+.specific-course-progress-info{
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}

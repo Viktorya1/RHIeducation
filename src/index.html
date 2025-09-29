@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo/mini-logo.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Образовательный центр ООО "РХИ"</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <section class="container main-section-1 d-flex flex-column p-0 mb-40">
+      <header class="d-flex justify-content-start m-bottom-2">
+        <div class="main-header-logo">
+          <img src="img/logo/logo.png" alt="Логотип" class="logo"/>
+        </div>
+        <nav>
+          <ul class="d-flex justify-content-start list-unstyled gap-30 nav">
+            <li><a href="#courses">Курсы</a></li>
+            <li>
+              <a>Сведения о центре</a>
+            </li>
+            <li>
+              <a
+                class="text-orange"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Войти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="text-license">
+          Лицензия на осуществление образовательной деятельности<br />
+          <b>Л035-01298-77/02285759</b> от 07.05.2025
+        </p>
+      </header>
+      <h1 class="main-title">Инженерно-образовательный комплекс ООО "РХИ"</h1>
+      <span class="main-subtitle">Строим будущее, обучаем сегодня</span>
+      <a href="#course-selection" class="btn-wrapper">
+        <button class="main-btn">
+          Записаться на курс
+          <img src="img/svg/arrow-btn.svg" alt="" width="25px" />
+        </button>
+      </a>
+    </section>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="section-title login-title">Вход</h2>
+            <button
+              class="login-btn-close btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="person.html" class="login-form">
+              <input type="email" placeholder="Email" class="login-input"/>
+              <input type="password" placeholder="Пароль" class="login-input"/>
+              <a href="#" class="login-href">Восстановить пароль</a>
+              <div class="login-actions">
+                <button class="main-btn login-btn">Войти</button>
+                <p class="login-text">
+                  Ещё нет аккаунта?
+                  <a
+                    href="#"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#registerModal"
+                    class="login-href register-link"
+                  >
+                    Зарегистрироваться
+                  </a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="section-title login-title">Регистрация</h2>
+            <button
+              type="button"
+              class="login-btn-close btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="admin_main.html" class="login-form">
+              <input type="text" placeholder="Имя" class="login-input"/>
+              <input type="email" placeholder="Email" class="login-input"/>
+              <input type="password" placeholder="Пароль" class="login-input"/>
+              <input type="password" placeholder="Повторите пароль" class="login-input"/>
+              <div class="login-actions">
+                <button class="main-btn login-btn">Зарегистрироваться</button>
+                <p class="login-text">
+                  Уже есть аккаунт?
+                  <a
+                    href="#"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                    class="login-href"
+                  >
+                    Войти
+                  </a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="CourseModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="section-title mb-0">Основы сварочного производства</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-start gap-40 mb-20">
+              <div class="modal-info-hours">Длительность - 48 часов</div>
+              <div class="download-course">
+                <img
+                  src="img/svg/download.svg"
+                  alt="download"
+                  class="download-icon"
+                />
+                <p>Скачать программу курса</p>
+              </div>
+            </div>
+            <p class="mb-20 modal-course-description">
+              Программа направлена на обновление и систематизацию знаний
+              сотрудников в области сварочного производства и материаловедения,
+              актуальных отраслевых нормативных документов и стандартов,
+              рассмотрение перспективных трендов отрасли.
+            </p>
+            <section сlass="mb-20">
+              <h3 class="modal-section-title">Курс подходит для</h3>
+              <div class="d-flex justify-content-start flex-wrap mb-20 gap-10">
+                <div class="aud-item">Сварщиков</div>
+                <div class="aud-item">Инженеров</div>
+                <div class="aud-item">Технологов</div>
+                <div class="aud-item">Менеджеров производств</div>
+                <div class="aud-item">Студентов</div>
+                <div class="aud-item">Специалистов смежных областей</div>
+              </div>
+            </section>
+            <section class="mb-20">
+              <h3 class="modal-section-title">Результаты обучения</h3>
+              <p class="modal-text">По окончании программы слушатели смогут:</p>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-6 mb-4">
+                  <div class="advantage-orange modal-advantage h-100">
+                    <p class="font-18 text-blue advantage-modal-text">
+                      Систематизировать знания в области сварочных технологий
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-6 mb-4">
+                  <div class="advantage-blue modal-advantage h-100">
+                    <p class="font-18 text-blue advantage-modal-text">
+                      Разбираться в современных методах сварки
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-6 mb-4">
+                  <div class="advantage-orange modal-advantage h-100">
+                    <p class="font-18 text-blue advantage-modal-text">
+                      Выбирать оптимальные технологии для разных задач
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-6 mb-4">
+                  <div class="advantage-blue modal-advantage h-100">
+                    <p class="font-18 text-blue advantage-modal-text">
+                      Анализировать качество сварных соединений
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-6 mb-4">
+                  <div class="advantage-orange modal-advantage h-100">
+                    <p class="font-18 text-blue advantage-modal-text">Предотвращать дефекты</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-40">
+              <h3 class="modal-section-title">Программа обучения:</h3>
+              <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      1. Введение в сварочное производство
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      1.1 Введение<br />
+                      1.2 Введение <br />
+                      1.3 Введение <br />
+                      1.4 Введение <br />
+                      1.5 Введение <br />
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      2. Основные методы сварки
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      2.1 Методы<br />
+                      2.2 Методы <br />
+                      2.3 Методы <br />
+                      2.4 Методы <br />
+                      2.5 Методы <br />
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      3. Материаловедение в сварочном производстве
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      3.1 Свойства металлов и сплавов<br />
+                      3.2 Влияние сварки на структуру и свойства материалов
+                      <br />
+                      3.3 Выбор материалов для различных видов сварки <br />
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      4. Контроль качества
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      1.1 Контроль качества<br />
+                      1.2 Контроль качества <br />
+                      1.3 Контроль качества <br />
+                      1.4 Контроль качества <br />
+                      1.5 Контроль качества <br />
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      4. Нормативные документы и стандарты
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      1.1 Контроль качества<br />
+                      1.2 Контроль качества <br />
+                      1.3 Контроль качества <br />
+                      1.4 Контроль качества <br />
+                      1.5 Контроль качества <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <h3 class="modal-section-title">
+                Предоставляемый документ об образовании:
+              </h3>
+              <div class="d-flex justify-content-start gap-10">
+                <img
+                  src="img/main/cert-1.png"
+                  alt="Certificate"
+                  class="certificate-img"
+                />
+                <p class="modal-text">
+                  Успешным выпускникам программы вручается удостоверение о
+                  повышении квалификации установленного образца.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container mb-40 p-0">
+      <h2 class="section-title">О нас</h2>
+      <div class="row">
+        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6">
+          <div class="card-about-us-1">
+            <p class="card-about-us-text">
+              <span class="semibold-text"
+                >Инженерно-образовательный комплекс <br />ООО 'РХИ'</span
+              >
+              – это современный образовательный центр, специализирующийся на
+              повышении квалификации специалистов в сфере строительства и
+              смежных областей. Наши программы разработаны практикующими
+              экспертами и соответствуют актуальным профессиональным стандартам.
+            </p>
+          </div>
+          <div class="card-about-us-2">
+            <p class="card-about-us-text">
+              <span class="semibold-text">Наши образовательные программы</span>
+              – это возможность получить актуальные знания под руководством
+              опытных преподавателей-практиков. По окончании обучения вы
+              получаете удостоверение государственного образца, подтверждающее
+              вашу квалификацию.
+            </p>
+          </div>
+        </div>
+        <div class="about-us-right col-xxl-5 col-xl-5 col-lg-5 col-md-6">
+          <h3 class="block-title text-orange">Образование - ключ к развитию</h3>
+          <p class="section-about-us-text">
+            Наши курсы повышения квалификации – это ваш шаг к профессиональному
+            успеху! Опытные эксперты, практико-ориентированное обучение и
+            документ гособразца – всё для вашего роста.
+          </p>
+          <h3 class="block-title text-blue">Что получают наши клиенты:</h3>
+          <img src="img/main/benefits.png" alt="" class="benefits-image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-about-us p-0 mb-40" id="courses">
+      <h2 class="section-title">Образовательные программы</h2>
+      <div class="courses-cards-wrapper">
+        <div class="course-card card-1">
+          <div>
+            <h3 class="course-card-title text-white">
+              Основы сварочного производства
+            </h3>
+            <span class="course-card-hours text-white">48 часов</span>
+          </div>
+          <div>
+            <p class="course-card-text text-white">
+              Обновить и систематизировать знания сотрудников в области
+              сварочного производства и материаловедения, актуальных отраслевых
+              нормативных документов и стандартов, рассмотреть перспективные
+              тренды отрасли
+            </p>
+            <button
+              class="main-btn course-card-btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#CourseModal"
+            >
+              Подробнее
+              <img src="img/svg/arrow-btn.svg" alt="arrow" width="25px" />
+            </button>
+          </div>
+        </div>
+        <div class="course-card card-2">
+          <div>
+            <h3 class="course-card-title color-blue">
+              Генеративные алгоритмы и ИИ в строительстве
+            </h3>
+            <span class="course-card-hours color-blue">24 часа</span>
+          </div>
+          <div>
+            <p class="course-card-text color-blue">
+              Курс рассказывает про возможности ИИ в строительстве, а также
+              работе с ИИ-ассистентами для организации бизнес-процессов
+            </p>
+            <button class="main-btn course-card-btn">
+              Подробнее
+              <img src="img/svg/arrow-btn.svg" alt="arrow" width="25px" />
+            </button>
+          </div>
+        </div>
+        <div class="course-card card-3">
+          <div>
+            <h3 class="course-card-title color-blue">
+              Русский язык для иностранцев
+            </h3>
+            <span class="course-card-hours color-blue">250 часов</span>
+          </div>
+          <div>
+            <p class="course-card-text color-blue">
+              Обучение русскому языку за рубежом на базе отделений
+              Россотрудничества и последующая сдача экзамена. Курс направлен на
+              освоение русского языка на базовом уровне
+            </p>
+            <button class="main-btn course-card-btn">
+              Подробнее
+              <img src="img/svg/arrow-btn.svg" alt="arrow" width="25px" />
+            </button>
+          </div>
+        </div>
+        <div class="course-card card-4">
+          <div>
+            <h3 class="course-card-title text-white">
+              Data-driven управление производственными процессами
+            </h3>
+            <span class="course-card-hours text-white">72 часа</span>
+          </div>
+          <div>
+            <p class="course-card-text text-white">
+              Курс обучает методам сбора, анализа и интерпретации данных для
+              принятия управленческих решений. Изучение Excel и Python, введение
+              в математический анализ и статистику
+            </p>
+            <button class="main-btn course-card-btn">
+              Подробнее
+              <img src="img/svg/arrow-btn.svg" alt="arrow" width="25px" />
+            </button>
+          </div>
+        </div>
+        <div class="course-card card-5">
+          <div>
+            <h3 class="course-card-title text-white">Менеджмент</h3>
+            <span class="course-card-hours text-white">192 часа</span>
+          </div>
+          <div>
+            <p class="course-card-text text-white">
+              Развитие ключевых управленческих компетенций для эффективного
+              руководства. Включает в себя модули по стратегическому
+              менеджменту, организационной психологии, управлению рисками,
+              эффективной коммуникации в бизнесе
+            </p>
+            <button class="main-btn course-card-btn">
+              Подробнее
+              <img src="img/svg/arrow-btn.svg" alt="arrow" width="25px" />
+            </button>
+          </div>
+        </div>
+        <div class="course-card card-6">
+          <div>
+            <h3 class="course-card-title color-blue">
+              Методология управления строительными объектами
+            </h3>
+            <span class="course-card-hours color-blue">48 часов</span>
+          </div>
+          <div>
+            <p class="course-card-text color-blue">
+              Системное понимание процессов управления на всех этапах
+              строительства. Освоение современных инструментов контроля сроков,
+              бюджета и качества работ
+            </p>
+            <button class="main-btn course-card-btn">
+              Подробнее
+              <img src="img/svg/arrow-btn.svg" alt="arrow" width="25px" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-advantages mb-40 p-0">
+      <div class="container p-0">
+        <h2 class="section-title title-advantages">Преимущества наших программ</h2>
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-6 mb-4">
+            <div class="advantage-orange h-100 advantage-main-card">
+              <p class="advantage-text font-18">
+                Программы созданы ведущими экспертами отрасли
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 mb-4">
+            <div class="advantage-blue h-100 advantage-main-card">
+              <p class="advantage-text font-18">
+                Выдача удостоверений государственного образца
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 mb-4">
+            <div class="advantage-orange h-100 advantage-main-card">
+              <p class="advantage-text font-18">Практикоориентированный подход</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 mb-4">
+            <div class="advantage-blue h-100 advantage-main-card">
+              <p class="advantage-text font-18">
+                Возможность трудоустройства в компании после обучения
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 mb-4">
+            <div class="advantage-orange h-100 advantage-main-card">
+              <p class="advantage-text font-18">Авторские методики обучения</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 mb-4">
+            <div class="advantage-blue h-100 advantage-main-card">
+              <p class="advantage-text font-18">Онлайн и оффлайн формат обучения</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 mb-4">
+            <div class="advantage-orange h-100 advantage-main-card">
+              <p class="advantage-text font-18">
+                Современное оборудование и производственная база
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 mb-4">
+            <div class="advantage-blue h-100 advantage-main-card">
+              <p class="advantage-text font-18">Широкий спектр образовательных направлений</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container p-0 mb-40">
+      <h2 class="section-title title-education">
+        Предоставляемый документ об образовании
+      </h2>
+      <p class="section-education-text">
+        Вашу квалификацию подтвердит официальный документ. Мы обучаем по
+        государственной лицензии и выдаём документ установленного образца.
+      </p>
+      <div class="certification-wrapper">
+        <img
+          src="img/main/Удостоверение.png"
+          alt="Удостоверение"
+          class="certification-image certification-1"
+        />
+        <p class="certification-text certification-1-text">
+          Успешным выпускникам программ повышения квалификации вручается
+          удостоверение о повышении квалификации установленного образца
+        </p>
+        <img
+          src="img/svg/arrow-1.svg"
+          alt="Стрелка"
+          class="certification-arrow-1"
+        />
+      </div>
+      <div class="certification-wrapper">
+        <p class="certification-text certification-2-text">
+          Успешным выпускникам программ профессиональной переподготовки
+          вручается диплом о профессиональной переподготовке установленного
+          образца
+        </p>
+        <img
+          src="img/main/Диплом.png"
+          alt="Диплом"
+          class="certification-image certification-2"
+        />
+        <img
+          src="img/svg/arrow-2.svg"
+          alt="Стрелка"
+          class="certification-arrow-2"
+        />
+      </div>
+      <div class="certification-wrapper certification-wrapper-3">
+        <img
+          src="img/main/Сертификат.png"
+          alt="Диплом"
+          class="certification-image certification-3"
+        />
+        <p class="certification-text certification-3-text">
+          Успешным выпускникам программ дополнительного образования вручается
+          сертификат дополнительного образования
+        </p>
+        <img
+          src="img/svg/arrow-3.svg"
+          alt="Стрелка"
+          class="certification-arrow-3"
+        />
+      </div>
+    </section>
+    <section class="section-course-selection mb-40" id="course-selection">
+      <div class="container course-selection-wrapper">
+        <div>
+          <h4 class="course-selection-title">Запишитесь на обучение</h4>
+          <p class="course-selection-text">
+            Сделайте первый шаг к своей карьере в строительстве. Заполните
+            заявку и присоединяйтесь к нашим учебным программам, чтобы развить
+            свои навыки и продвинуться по карьерной лестнице.
+          </p>
+        </div>
+        <form>
+          <input type="text" placeholder="Ваше имя" />
+          <input type="email" placeholder="Email" />
+          <select>
+            <option value="">Выберите курс</option>
+            <option value="course1">Основы сварочного производства</option>
+            <option value="course2">
+              Генеративные алгоритмы и ИИ в строительстве
+            </option>
+            <option value="course3">Русский язык для иностранцев</option>
+            <option value="course3">
+              Data-driven управление производственными процессами
+            </option>
+            <option value="course3">Менеджмент</option>
+            <option value="course3">
+              Методология управления строительными объектами
+            </option>
+          </select>
+          <button class="main-btn submit-btn">Записаться</button>
+        </form>
+      </div>
+    </section>
+    <section class="container mb-40 d-flex gap-25 p-0">
+      <img src="img/main/welder.png" alt="Сварщик" class="welder-image" />
+      <div class="section-questions-main">
+        <h2 class="section-title text-orange">Часто задаваемые вопросы</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsOne"
+                aria-expanded="true"
+                aria-controls="collapseQuestionsOne"
+              >
+                Какие программы вы предлагаете?
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Мы предлагаем такие программы, как "Основы сварочного
+                производства", "Генеративные алгоритмы и ИИ в строительстве",
+                "Русский язык для иностранцев", "Data-driven управление
+                производственными процессами", "Менеджмент", "Методология
+                управления строительными объектами"
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsTwo"
+                aria-expanded="false"
+                aria-controls="collapseQuestionsTwo"
+              >
+                Как записаться на курс?
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Чтобы записаться на курс необходимо заполнить форму с выбором
+                курса, на который вы хотели бы записаться
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsThree"
+                aria-expanded="false"
+                aria-controls="collapseQuestionsThree"
+              >
+                Какой документ я получу после окончания курсов?
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                После завершения программ повышения квалификации - удостоверение
+                о повышении квалификации, программ профессиональной
+                переподготовки - диплом о профессиональной переподготовке, а
+                успешным выпускникам программ дполнительного оборазования -
+                сертификат
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestionsFour"
+                aria-expanded="false"
+                aria-controls="collapseQuestionsFour"
+              >
+                Где можно ознакомиться с подробной информацией о курсе?
+              </button>
+            </h2>
+            <div
+              id="collapseQuestionsFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Нужно найти интересующую образовательную программу и нажать
+                кнопку "Подробнее"
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="container section-footer">
+        <div class="d-flex justify-content-between">
+          <p class="footer-text">
+            ООО «РХИ» — образовательные <br />
+            программы в сфере <br />
+            строительства
+          </p>
+          <div class="d-flex flex-column gap-3">
+            <p class="footer-text semibold-text">Контакты</p>
+            <p class="footer-text">
+              +7 (495) 933 95 61<br />rhi.edu2025@gmail.com
+            </p>
+            <p class="footer-text">г. Москва, ул. Ивана Франко, д. 8</p>
+          </div>
+        </div>
+        <p class="footer-text footer-center-text">© ООО «РХИ», 2025</p>
+      </section>
+    </footer>
+  </body>
+</html>
