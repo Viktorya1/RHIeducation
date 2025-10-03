@@ -12,6 +12,14 @@
   justify-content: space-between;
 }
 
+.content {
+  flex: 1 0 auto;
+}
+
+.wrapper-flex {
+  min-height: 100vh;
+}
+
 .course-main-title {
   font-size: 3.3rem;
   font-weight: 700;
@@ -25,12 +33,130 @@
   font-weight: 500;
 }
 
-.specific-course-progress{
-    width: 50%;
+.specific-course-progress {
+  width: 50%;
 }
 
-.specific-course-progress-info{
+.specific-course-progress-info {
   font-size: 1.8rem;
   display: flex;
   justify-content: space-between;
+}
+
+.course-lesson {
+  background-color: #f5f5f5;
+  padding: 2%;
+  border-radius: 15px;
+  margin-bottom: 7px;
+}
+
+.course-lesson-top {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.course-checked {
+  font-size: 18px;
+}
+
+.course-lesson-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.course-lesson-text {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 1%;
+  max-width: 80%;
+}
+
+@media (max-width: 1400px) {
+  .section-info-course {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .section-info-course {
+    padding: 15px;
+  }
+  .course-lesson-title,
+  .course-lesson-text,
+  .course-checked {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .course-main-title {
+    font-size: 18px;
+  }
+  .accordion-button {
+    font-size: 16px;
+  }
+  .accordion-button::after {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  .section-info-course {
+    background-image: url(../img/course/course-1-mini.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 365/141;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-lesson-title,
+  .course-lesson-text,
+  .course-checked {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 510px) {
+  .course-main-title{
+    font-size: 16px;
+    max-width: 60%;
+  }
+  .course-info-text {
+    max-width: 60%;
+  }
+  .specific-course-progress {
+    width: 60%;
+  }
+}
+
+@media (max-width: 485px){
+  .course-info-text{
+    font-size: 10px;
+  }
+  .course-lesson-text{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px){
+  .course-main-title{
+    font-size: 14px;
+  }
+  .section-info-course {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 400px){
+  .course-info-text {
+    display: none;
+  }
+  .course-checked{
+    font-size: 12px;
+  }
 }

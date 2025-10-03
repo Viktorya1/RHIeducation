@@ -1,0 +1,41 @@
+.lesson-title {
+  font-size: 25px;
+}
+
+.lesson-content {
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto 30px auto;
+}
+
+@media (max-width: 1150px) {
+  .lesson-title {
+    font-size: 20px;
+  }
+  .lesson-content {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .lesson-title {
+    font-size: 18px;
+  }
+  .lesson-arrow {
+    width: 30px;
+  }
+  .lesson-content {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 475px){
+    .lesson-content{
+        font-size: 14px;
+    }
+    .lesson-title{
+        font-size: 16px;
+    }
+}

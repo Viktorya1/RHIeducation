@@ -1,0 +1,53 @@
+.sign-up-body{
+    background-color: #F5F5F5;
+}
+
+.sign-up-container{
+    height: 100vh;
+    border-radius: $border-radius;
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.sign-up-header{
+    text-align: center;
+}
+
+.sign-up-logo{
+    margin-bottom: 10px;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+.login-form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.login-href {
+  color: #496c8d;
+  font-size: 1.8rem;
+}
+
+.login-text {
+  font-size: 1.8rem;
+  color: #00274a;
+  text-align: center;
+}
+
+.login-actions {
+  margin: 0 auto;
+}
+
+.login-btn{
+    margin: 2.5rem auto 1rem auto;
+}
+
+@media (max-width: 574px){
+    .login-input{
+      font-size: 2rem;
+    }
+}

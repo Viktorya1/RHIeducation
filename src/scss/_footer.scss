@@ -1,5 +1,6 @@
 footer {
   background-color: $color-title;
+  flex: 0 0 auto;
 }
 
 .section-footer {
@@ -16,4 +17,10 @@ footer {
 .footer-center-text {
   text-align: center;
   margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+  .section-footer {
+    padding: 7px;
+  }
 }

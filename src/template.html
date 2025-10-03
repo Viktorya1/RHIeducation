@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo/mini-logo.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <div class="d-flex flex-column wrapper-flex">
+        <header
+        class="container d-flex justify-content-start gap-40 align-items-center p-0 mb-20 mt-3"
+      >
+        <a href="main.html"
+          ><img src="img/logo/logo.png" alt="logo" class="logo header-logo"
+        /></a>
+        <div
+          class="header-nav d-flex justify-content-between align-items-center"
+        >
+          <a href="person.html" class="header-nav-link">Моё обучение</a>
+          <div>
+            <button
+              type="button"
+              class="icon-btn"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-html="true"
+              data-bs-content="
+            <div class='popover-menu'>
+            <a href='#' class='popover-link'>Настройки профиля</a>
+            <a href='main.html' class='popover-link'>Выйти из аккаунта</a>
+        </div>
+            "
+            >
+              <img
+                src="img/svg/avatar-icon.svg"
+                alt="avatar"
+                class="header-icon"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+
+      </div>
+      <footer>
+        <section class="container section-footer">
+          <div class="d-flex justify-content-between">
+            <p class="footer-text">
+              ООО «РХИ» — образовательные <br />
+              программы в сфере <br />
+              строительства
+            </p>
+            <div class="d-flex flex-column gap-3">
+              <p class="footer-text semibold-text">Контакты</p>
+              <p class="footer-text">
+                +7 (495) 933 95 61<br />rhi.edu2025@gmail.com
+              </p>
+              <p class="footer-text">г. Москва, ул. Ивана Франко, д. 8</p>
+            </div>
+          </div>
+          <p class="footer-text footer-center-text">© ООО «РХИ», 2025</p>
+        </section>
+      </footer>
+    </div>
+</body>
+</html>
