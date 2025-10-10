@@ -186,6 +186,18 @@ nav li a {
   margin-bottom: 1.5rem;
 }
 
+.height-limit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  line-clamp: 7;
+  box-orient: vertical;
+}
+
 .card-1 {
   background-image: url(../img/cards/card1.png);
 }
@@ -446,8 +458,8 @@ option:checked {
     bottom: 300px;
   }
   .certification-2-text {
-  right: 10%;
-}
+    right: 10%;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -809,28 +821,29 @@ option:checked {
   .section-advantages {
     min-height: 260px;
   }
-  .card-about-us-1, .card-about-us-2{
+  .card-about-us-1,
+  .card-about-us-2 {
     min-width: 100%;
   }
 }
 
 @media (max-width: 350px) {
-html {
+  html {
     font-size: 33%;
   }
 }
 
-@media (max-width: 340px){
-  .course-card-title{
+@media (max-width: 340px) {
+  .course-card-title {
     font-size: 12px;
   }
-  .course-selection-text{
+  .course-selection-text {
     font-size: 10px;
   }
-  .course-selection-title{
+  .course-selection-title {
     font-size: 14px;
   }
-  .main-title{
+  .main-title {
     font-size: 18px;
   }
 }

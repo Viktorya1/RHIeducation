@@ -1,0 +1,342 @@
+.nav-pills {
+  background-color: $color-blue;
+  width: 420px;
+  margin-top: 0;
+  margin-left: 0;
+  display: block;
+  border-radius: 15px;
+  padding: 21px;
+}
+
+.info-content-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 375px;
+}
+
+.nav-link.active {
+  background-color: $color-orange !important;
+  padding: 5px 9px;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.info-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: $color-title;
+  margin-bottom: 15px;
+}
+
+.info-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.file-download {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: $color-blue;
+  text-decoration: none;
+  margin-top: 15px;
+  max-width: 450px;
+}
+
+.download-card {
+  border: 1px solid $color-blue;
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 15px;
+  align-items: center;
+  font-size: 18px;
+  color: $color-blue;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.download-card:hover {
+  background-color: #f5f5f5;
+}
+
+.tab-content {
+  width: 100%;
+}
+
+.info-course-card {
+  border: 2px solid $color-blue;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.info-course-card-header {
+  margin-bottom: 20px;
+}
+
+.info-course-card-text {
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.teacher-avatar {
+  width: 120px;
+  margin-bottom: 5px;
+  border: 1px solid $color-blue;
+  border-radius: 50%;
+}
+
+.teacher-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.teacher-item h4 {
+  font-size: 18px;
+}
+
+.teachers-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info-orange-text {
+  color: $color-orange;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.info-list {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1150px) {
+  .nav-pills {
+    width: 380px;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .nav-link.active {
+    padding: 4px 7px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  .file-download {
+    font-size: 18px;
+  }
+  .download-card {
+    padding: 15px;
+    gap: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+  .info-course-card {
+    border-radius: 12px;
+    padding: 15px;
+  }
+  .teacher-avatar {
+    width: 100px;
+  }
+  .teacher-item {
+    width: 32%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .teacher-item h4 {
+    font-size: 16px;
+  }
+  .teachers-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-pills {
+    width: 270px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  .nav-link.active {
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .info-title {
+    font-size: 20px;
+  }
+  .info-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .file-download {
+    font-size: 14px;
+  }
+  .download-card {
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .pdf-icon {
+    width: 25px;
+  }
+  .info-course-card {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .info-course-card-text {
+    font-size: 14px;
+  }
+  .teacher-avatar {
+    width: 80px;
+  }
+  .teacher-item {
+    width: 30%;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .teacher-item h4 {
+    font-size: 14px;
+  }
+  .info-list {
+    font-size: 14px;
+  }
+  .info-orange-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 730px) {
+  .nav-pills {
+    width: 240px;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  .info-title {
+    font-size: 18px;
+  }
+  .teacher-avatar {
+    width: 70px;
+  }
+  .teacher-item {
+    width: 45%;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .teacher-item h4 {
+    font-size: 14px;
+  }
+  .tab-pane {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-pills {
+    width: 210px;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+  .nav-link.active {
+    font-size: 12px;
+  }
+  .info-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .info-text {
+    font-size: 12px;
+  }
+  .file-download {
+    font-size: 12px;
+  }
+  .download-card {
+    padding: 5px;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .pdf-icon {
+    width: 22px;
+  }
+  .info-course-card-text {
+    font-size: 12px;
+  }
+  .info-course-card-header {
+    margin-bottom: 10px;
+  }
+  .info-list {
+    font-size: 12px;
+  }
+  .info-course-card-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 440px) {
+  .info-content-wrapper {
+    flex-direction: column;
+  }
+  .nav-pills {
+    width: 100%;
+  }
+  .tab-pane {
+    min-width: 370px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .tab-pane {
+    min-width: 340px !important;
+  }
+}
+
+@media (max-width: 345px) {
+  .tab-pane {
+    min-width: 320px !important;
+  }
+}
