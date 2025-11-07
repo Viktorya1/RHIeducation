@@ -3,7 +3,7 @@
   border: none;
   border-radius: $border-radius;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   box-sizing: border-box;
@@ -13,15 +13,15 @@
 @mixin arrow-orange-btn {
   @include orange-btn;
   display: flex;
-  gap: 2.2rem;
+  gap: 1.375rem;
 }
 
 @mixin card-about-us{
   background-size: contain;
   background-repeat: no-repeat;
   aspect-ratio: 556/247;
-  padding: 4rem 1.5rem 1.5rem 1.5rem;
-  max-width: 55.6rem;
+  padding: 2.5rem 0.9375rem 0.9375rem 0.9375rem;
+  max-width: 34.75rem;
   box-sizing: border-box;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }

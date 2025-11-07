@@ -19,8 +19,6 @@
     margin-bottom: 10px;
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 
 .login-form {
   margin: 0 auto;
@@ -29,11 +27,11 @@
 
 .login-href {
   color: #496c8d;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
 }
 
 .login-text {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   color: #00274a;
   text-align: center;
 }
@@ -43,11 +41,11 @@
 }
 
 .login-btn{
-    margin: 2.5rem auto 1rem auto;
+    margin: 1.5625rem auto 0.625rem auto;
 }
 
 @media (max-width: 574px){
     .login-input{
-      font-size: 2rem;
+      font-size: 1.28205rem;
     }
 }

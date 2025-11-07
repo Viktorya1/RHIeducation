@@ -1,5 +1,4 @@
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -37,12 +36,12 @@ li {
 }
 
 nav {
-  padding: 1.6rem 2.4rem;
+  padding: 1rem 1.5rem;
   background-color: white;
   border-radius: $border-radius;
-  margin-top: 4.3rem;
+  margin-top: 2.6875rem;
   width: 54%;
-  max-height: 5.5rem;
+  max-height: 3.4375rem;
   margin-right: 5%;
   box-sizing: border-box;
 }
@@ -58,32 +57,32 @@ nav li {
 nav li a {
   text-decoration: none;
   color: $color-blue;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
 .text-license {
   color: $color-blue;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
   width: 25%;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   line-height: normal;
 }
 
 .main-title {
   color: white;
-  font-size: 3.7rem;
-  width: 65rem;
+  font-size: 2.3125rem;
+  width: 40.625rem;
   font-weight: 700;
-  margin-left: 2.5rem;
+  margin-left: 1.5625rem;
 }
 
 .main-subtitle {
   margin-left: 2%;
   color: white;
-  font-size: 2.2rem;
-  margin-top: 0.5rem;
+  font-size: 1.375rem;
+  margin-top: 0.315rem;
   font-weight: 500;
 }
 
@@ -97,7 +96,7 @@ nav li a {
 
 .main-btn {
   @include arrow-orange-btn;
-  padding: 1.4rem 4.4rem;
+  padding: 0.875rem 0.875rem;
 }
 
 .main-btn:hover {
@@ -106,9 +105,9 @@ nav li a {
 
 .section-title {
   color: $color-title;
-  font-size: 3.7rem;
+  font-size: 2.3125rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5625rem;
 }
 
 .card-about-us-1 {
@@ -123,28 +122,28 @@ nav li a {
 
 .card-about-us-text {
   color: white;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .block-title {
-  font-size: 2.7rem;
+  font-size: 1.6875rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.625rem;
 }
 
 .about-us-right {
-  margin-left: 2rem;
+  margin-left: 1.25rem;
 }
 
 .section-about-us-text {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 500;
   width: 95%;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .benefits-image {
-  max-width: 58.7rem;
+  max-width: 36.6875rem;
 }
 
 .courses-cards-wrapper {
@@ -158,7 +157,7 @@ nav li a {
   background-size: contain;
   background-repeat: no-repeat;
   aspect-ratio: 620/332;
-  padding: 1.5rem 2.6rem;
+  padding: 0.9375rem 1.625rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -168,22 +167,22 @@ nav li a {
 }
 
 .course-card-title {
-  font-size: 2.5rem;
+  font-size: 1.5625rem;
   font-weight: 700;
-  max-width: 35.8rem;
-  margin-bottom: 0.1rem;
+  max-width: 22.375rem;
+  margin-bottom: 0.0625rem;
 }
 
 .course-card-hours {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .course-card-text {
-  font-size: 1.7rem;
+  font-size: 1.0625rem;
   font-weight: 500;
-  max-width: 36rem;
-  margin-bottom: 1.5rem;
+  max-width: 22.5rem;
+  margin-bottom: 0.9375rem;
 }
 
 .height-limit {
@@ -227,14 +226,14 @@ nav li a {
   background-size: contain;
   background-repeat: no-repeat;
   aspect-ratio: 1440/372;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 0.9375rem 0 0.9375rem 0;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .advantage-orange {
-  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  padding: 2.5rem 0.9375rem 0.9375rem 0.9375rem;
   background-image: url(../img/main/advantage1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -242,7 +241,7 @@ nav li a {
 }
 
 .advantage-blue {
-  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  padding: 2.5rem 0.9375rem 0.9375rem 0.9375rem;
   background-image: url(../img/main/advantage2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -250,13 +249,13 @@ nav li a {
 }
 
 .section-education-text {
-  font-size: 2rem;
-  max-width: 98.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  max-width: 61.5625rem;
+  margin-bottom: 0.625rem;
 }
 
 .title-education {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3125rem;
 }
 
 .certification-image {
@@ -274,7 +273,7 @@ nav li a {
 }
 
 .certification-text {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #003462;
 }
@@ -284,7 +283,7 @@ nav li a {
 }
 
 .certification-1-text {
-  max-width: 52.9rem;
+  max-width: 33.0625rem;
   position: absolute;
   left: 41%;
   bottom: 65%;
@@ -302,7 +301,7 @@ nav li a {
 }
 
 .certification-2-text {
-  max-width: 55.6rem;
+  max-width: 34.75rem;
   position: absolute;
   right: 13%;
   bottom: 100%;
@@ -316,18 +315,18 @@ nav li a {
 .certification-3-text {
   position: absolute;
   left: 0;
-  max-width: 49.8rem;
-  bottom: 44.5rem;
+  max-width: 31.125rem;
+  bottom: 27.8125rem;
 }
 
 .certification-arrow-3 {
   position: absolute;
-  left: 43.1rem;
-  bottom: 34rem;
+  left: 26.9375rem;
+  bottom: 21.25rem;
 }
 
 .certification-wrapper-3 {
-  top: 3.5rem;
+  top: 2.1875rem;
 }
 
 .section-course-selection {
@@ -335,10 +334,10 @@ nav li a {
   background-size: contain;
   background-repeat: no-repeat;
   aspect-ratio: 1440/392;
-  margin-top: 8rem;
+  margin-top: 5rem;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -347,29 +346,29 @@ nav li a {
 .course-selection-wrapper {
   background-color: white;
   padding: 3% 4%;
-  border-radius: 1.5rem;
+  border-radius: 0.9375rem;
   box-sizing: border-box;
   display: flex;
   justify-content: start;
-  gap: 3.5rem;
+  gap: 2.1875rem;
   margin: auto auto;
 }
 
 .course-selection-title {
-  font-size: 2.7rem;
+  font-size: 1.6875rem;
   font-weight: 700;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.125rem;
 }
 
 .course-selection-text {
-  font-size: 2rem;
-  max-width: 52.6rem;
+  font-size: 1.25rem;
+  max-width: 32.875rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.75rem;
   width: 50%;
 }
 
@@ -378,10 +377,10 @@ select {
   border: #f1f0f0 1px solid;
   background-color: #f1f0f0;
   color: #496c8d;
-  border-radius: 1.5rem;
-  padding: 1.5rem 2.5rem;
+  border-radius: 0.9375rem;
+  padding: 0.9375rem 1.5625rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   outline: none;
 }
 
@@ -398,8 +397,8 @@ select {
   appearance: none;
   background-image: url(../img/svg/form-arrow.svg);
   background-repeat: no-repeat;
-  background-position: right 1.5rem center;
-  background-size: 2rem;
+  background-position: right 0.9375rem center;
+  background-size: 1.25rem;
 }
 
 option:checked {
@@ -408,13 +407,13 @@ option:checked {
 }
 
 .submit-btn {
-  max-width: 19.8rem;
+  max-width: 12.375rem;
   margin: 0 auto;
 }
 
 .welder-image {
-  max-width: 46rem;
-  max-height: 57.4rem;
+  max-width: 28.75rem;
+  max-height: 35.875rem;
 }
 
 .section-questions-main {
@@ -422,19 +421,19 @@ option:checked {
 }
 
 @media (max-width: 1400px) {
+  html {
+    font-size: 15.36px;
+  }
   .benefits-image {
     width: 530px;
   }
   .text-license {
     font-size: 14px;
   }
-  html {
-    font-size: 60%;
-  }
   nav {
-    margin-top: 3.9rem;
+    margin-top: 2.4375rem;
     width: 53%;
-    max-height: 5.5rem;
+    max-height: 3.4375rem;
     margin-right: 5%;
     box-sizing: border-box;
   }
@@ -442,7 +441,7 @@ option:checked {
     margin-left: 0;
   }
   .course-card {
-    padding: 1rem 1.5rem;
+    padding: 0.625rem 0.9375rem;
   }
   .course-card-text {
     font-size: 14px;
@@ -462,6 +461,9 @@ option:checked {
 }
 
 @media (max-width: 1150px) {
+  html {
+    font-size: 12.8px;
+  }
   .main-header-logo {
     width: 100px;
     height: 70px;
@@ -470,14 +472,11 @@ option:checked {
     width: 90px;
   }
   nav {
-    margin-top: 3.7rem;
+    margin-top: 2.3125rem;
   }
   .text-license {
-    margin-top: 3rem;
+    margin-top: 1.875rem;
     font-size: 12px;
-  }
-  html {
-    font-size: 50%;
   }
   .course-card-text {
     font-size: 12px;
@@ -490,7 +489,14 @@ option:checked {
   }
 }
 
+
 @media (max-width: 992px) {
+  html {
+    font-size: 9.984px;
+  }
+  .col-md-3{
+    padding: 0 4.68px;
+  }
   .main-header-logo {
     width: 75px;
     height: 53px;
@@ -498,15 +504,12 @@ option:checked {
   .logo {
     width: 65px;
   }
-  html {
-    font-size: 39%;
-  }
   .text-license {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     font-size: 8px;
   }
   nav {
-    margin-top: 3.8rem;
+    margin-top: 2.375rem;
   }
   .benefits-image {
     width: 350px;
@@ -517,11 +520,8 @@ option:checked {
   .course-card-title {
     font-size: 15px;
   }
-  .advantage-orange {
-    padding: 3rem 1rem 1rem 1rem;
-  }
-  .advantage-blue {
-    padding: 3rem 1rem 1rem 1rem;
+  .advantage-orange, .advantage-blue {
+    padding: 1.875rem 0.625rem 0.625rem 0.625rem;
   }
   .advantage-text {
     font-size: 10px;
@@ -581,7 +581,7 @@ option:checked {
   nav {
     width: 100%;
     margin-right: 2%;
-    margin-top: 3.3rem;
+    margin-top: 2.11538rem;
   }
   .main-subtitle {
     margin-left: 2%;
@@ -611,7 +611,7 @@ option:checked {
     background-image: none;
     width: 100%;
     height: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5641rem;
     min-height: 250px;
   }
   .certification-arrow-2,
@@ -651,7 +651,7 @@ option:checked {
     top: 0px;
   }
   .section-course-selection {
-    margin-top: 2rem;
+    margin-top: 1.28205rem;
   }
   .course-selection-wrapper {
     padding: 5px;
@@ -718,7 +718,7 @@ option:checked {
     max-height: 50px;
     padding: 5px 5px;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 0.64102rem;
     border: 1px solid $color-blue;
   }
 }
@@ -743,14 +743,14 @@ option:checked {
     width: 100%;
   }
   .course-card-title {
-    font-size: 3rem;
+    font-size: 1.92307rem;
   }
   .course-card-hours {
-    font-size: 2rem;
+    font-size: 1.28205rem;
   }
   .course-card-text {
-    font-size: 1.7rem;
-    max-width: 42rem;
+    font-size: 1.08974rem;
+    max-width: 26.92307rem;
   }
 }
 
@@ -774,8 +774,8 @@ option:checked {
     font-size: 15px;
   }
   .course-card-text {
-    font-size: 1.7rem;
-    max-width: 39rem;
+    font-size: 1.08974rem;
+    max-width: 25rem;
   }
 }
 
@@ -788,7 +788,7 @@ option:checked {
     font-size: 20px;
   }
   nav {
-    margin-top: 2.9rem;
+    margin-top: 1.8589rem;
   }
   .course-selection-title {
     font-size: 16px;
@@ -798,18 +798,19 @@ option:checked {
   }
 }
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 @media (max-width: 375px) {
   html {
-    font-size: 35%;
+    font-size: 8.96px;
   }
   .course-card-text {
-    max-width: 36rem;
+    max-width: 22.5rem;
   }
   .course-selection-wrapper {
     padding: 7px;
   }
   .certification-text {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .main-btn {
     padding: 8px 15px;
@@ -828,7 +829,7 @@ option:checked {
 
 @media (max-width: 350px) {
   html {
-    font-size: 33%;
+    font-size: 8.24px;
   }
 }
 

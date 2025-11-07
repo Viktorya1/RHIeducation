@@ -5,7 +5,7 @@
   aspect-ratio: 1260/288;
   height: 100%;
   box-sizing: border-box;
-  padding: 3rem;
+  padding: 1.875rem;
   color: white;
   display: flex;
   flex-direction: column;
@@ -21,14 +21,14 @@
 }
 
 .course-main-title {
-  font-size: 3.3rem;
+  font-size: 2.0625rem;
   font-weight: 700;
   max-width: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.625rem;
 }
 
 .course-info-text {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   max-width: 50%;
   font-weight: 500;
 }
@@ -38,7 +38,7 @@
 }
 
 .specific-course-progress-info {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   display: flex;
   justify-content: space-between;
 }

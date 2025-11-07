@@ -1,17 +1,17 @@
 .gap-30{
-    gap: 3rem;
+    gap: 1.875rem;
 }
 
 .gap-40{
-    gap: 4rem;
-}
-
-.gap-25{
     gap: 2.5rem;
 }
 
+.gap-25{
+    gap: 1.5625rem;
+}
+
 .gap-10{
-    gap: 1rem;
+    gap: 0.625rem;
 }
 
 .m-bottom-2{
@@ -19,11 +19,15 @@
 }
 
 .mb-40{
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.mb-4{
+    margin-bottom: 0.9375rem !important;
 }
 
 .mb-20{
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .mb-0{
@@ -47,5 +51,5 @@
 }
 
 .font-18{
-    font-size: 1.8rem;
+    font-size: 1.125rem;
 }

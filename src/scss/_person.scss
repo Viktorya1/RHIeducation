@@ -8,24 +8,24 @@
 
 .person-info-wrapper {
   margin: 0 auto;
-  max-width: 40rem;
+  max-width: 25rem;
   box-sizing: border-box;
   padding: 5%;
 }
 
 .avatar {
-  width: 13.8rem;
+  width: 8.625rem;
 }
 
 .person-info {
-  font-size: 2.2rem;
+  font-size: 1.375rem;
 }
 
 .person-section-title{
   color: $color-title;
-  font-size: 3.7rem;
+  font-size: 2.3125rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.625rem;
 }
 
 .person-courses-wrapper {
@@ -40,7 +40,7 @@
   background-repeat: no-repeat;
   aspect-ratio: 620/240;
   box-sizing: border-box;
-  padding: 1.5rem 2.5rem;
+  padding: 0.9375rem 1.5625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,22 +73,22 @@
 }
 
 .person-course-title {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: white;
-  max-width: 33.9rem;
-  margin-bottom: 0.2rem;
+  max-width: 21.1875rem;
+  margin-bottom: 0.125rem;
 }
 
 .person-course-hours {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .person-btn-wrapper {
   text-decoration: none;
-  width: 25.3rem;
+  width: 15.8125rem;
   display: inline-block;
 }
 
@@ -99,13 +99,13 @@
 
 .person-progress-info {
   color: white;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   display: flex;
   justify-content: space-between;
 }
 
 .person-progress {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3125rem;
 }
 
 .person-progress-bar {
@@ -114,7 +114,7 @@
 
 @media (max-width: 1400px) {
   .person-course-title {
-    font-size: 2.2rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -133,24 +133,24 @@
     padding: 0;
   }
   .avatar {
-    width: 16rem;
+    width: 10.256410rem;
   }
   .person-info {
-    font-size: 3rem;
+    font-size: 1.9230rem;
   }
   .person-course {
     width: 80%;
     margin: 0 auto 1% auto;
   }
   .person-course-title {
-    font-size: 2.5rem;
-    max-width: 36rem;
+    font-size: 1.6025rem;
+    max-width: 23.0769rem;
   }
   .person-course-hours {
-    font-size: 2rem;
+    font-size: 1.282rem;
   }
   .person-progress-info {
-    font-size: 1.8rem;
+    font-size: 1.1538rem;
   }
 }
 
@@ -168,13 +168,13 @@
     width: 100%;
   }
   .person-info {
-    font-size: 2.5rem;
+    font-size: 1.60256rem;
   }
 }
 
 @media (max-width: 430px) {
   .avatar {
-    width: 14rem;
+    width: 8.97435rem;
   }
   .person-info-wrapper {
     max-width: 57%;
@@ -183,9 +183,9 @@
 
 @media (max-width: 400px) {
   .person-course-title {
-    font-size: 2.2rem;
+    font-size: 1.410256rem;
   }
   .person-course-hours {
-    font-size: 1.7rem;
+    font-size: 1.08974rem;
   }
 }
