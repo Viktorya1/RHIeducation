@@ -11,6 +11,8 @@
     />
     <title>Document</title>
     <link rel="stylesheet" href="scss/styles.scss" />
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
     <script type="module" src="./js/main.js"></script>
 </head>
 <body>
@@ -53,24 +55,30 @@
 
       </div>
       <footer>
-        <section class="container section-footer">
-          <div class="d-flex justify-content-between">
+      <section class="container section-footer">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex flex-column justify-content-between">
             <p class="footer-text">
               ООО «РХИ» — образовательные <br />
               программы в сфере <br />
               строительства
             </p>
-            <div class="d-flex flex-column gap-3">
-              <p class="footer-text semibold-text">Контакты</p>
-              <p class="footer-text">
-                +7 (495) 933 95 61<br />rhi.edu2025@gmail.com
-              </p>
-              <p class="footer-text">г. Москва, ул. Ивана Франко, д. 8</p>
-            </div>
+            <button id="specialButton" class="eye-button">
+              <img src="img/svg/eye.svg" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" class="eye-icon"/>
+              <span>Версия для слабовидящих</span>
+            </button>
           </div>
-          <p class="footer-text footer-center-text">© ООО «РХИ», 2025</p>
-        </section>
-      </footer>
+          <div class="d-flex flex-column gap-3">
+            <p class="footer-text semibold-text">Контакты</p>
+            <p class="footer-text">
+              +7 (495) 933 95 61<br />rhi.edu2025@gmail.com
+            </p>
+            <p class="footer-text">г. Москва, ул. Ивана Франко, д. 8</p>
+          </div>
+        </div>
+        <p class="footer-text footer-center-text">© ООО «РХИ», 2025</p>
+      </section>
+    </footer>
     </div>
 </body>
 </html>

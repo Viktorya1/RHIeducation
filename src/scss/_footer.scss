@@ -19,8 +19,57 @@ footer {
   margin-top: 0.625rem;
 }
 
+.eye-button {
+  border: none;
+  background-color: $color-title;
+  color: white;
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.eye-icon {
+  height: 30px;
+}
+
+@media (max-width: 992px){
+  .eye-button {
+    font-size: 16px;
+  }
+  .eye-icon {
+    height: 25px;
+  }
+}
+
+@media (max-width: 730px){
+  .eye-button {
+    font-size: 14px;
+  }
+  .eye-icon {
+    height: 20px;
+  }
+}
+
 @media (max-width: 576px) {
   .section-footer {
     padding: 7px;
+  }
+  .eye-button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 417px){
+  .eye-button {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 340px){
+  .eye-button {
+    font-size: 10px;
   }
 }

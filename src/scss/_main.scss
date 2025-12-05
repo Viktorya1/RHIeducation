@@ -489,12 +489,11 @@ option:checked {
   }
 }
 
-
 @media (max-width: 992px) {
   html {
     font-size: 9.984px;
   }
-  .col-md-3{
+  .col-md-3 {
     padding: 0 4.68px;
   }
   .main-header-logo {
@@ -520,7 +519,8 @@ option:checked {
   .course-card-title {
     font-size: 15px;
   }
-  .advantage-orange, .advantage-blue {
+  .advantage-orange,
+  .advantage-blue {
     padding: 1.875rem 0.625rem 0.625rem 0.625rem;
   }
   .advantage-text {
@@ -798,7 +798,6 @@ option:checked {
   }
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 @media (max-width: 375px) {
   html {
     font-size: 8.96px;

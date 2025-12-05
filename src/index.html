@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,12 +12,14 @@
     <title>Образовательный центр ООО "РХИ"</title>
     <link rel="stylesheet" href="scss/styles.scss" />
     <script type="module" src="./js/main.js"></script>
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
   </head>
   <body>
     <section class="container main-section-1 d-flex flex-column p-0 mb-40">
       <header class="d-flex justify-content-start m-bottom-2">
         <div class="main-header-logo">
-          <img src="img/logo/logo.png" alt="Логотип" class="logo"/>
+          <img src="img/logo/logo.png" alt="Логотип" class="logo" />
         </div>
         <nav>
           <ul class="d-flex justify-content-start list-unstyled gap-30 nav">
@@ -26,11 +28,7 @@
               <a href="info.html">О центре</a>
             </li>
             <li>
-              <a
-                class="text-orange"
-                href="sign_in.html"
-                >Войти</a
-              >
+              <a class="text-orange" href="sign_in.html">Войти</a>
             </li>
           </ul>
         </nav>
@@ -130,7 +128,9 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-6 mb-4">
                   <div class="advantage-orange modal-advantage h-100">
-                    <p class="font-18 text-blue advantage-modal-text">Предотвращать дефекты</p>
+                    <p class="font-18 text-blue advantage-modal-text">
+                      Предотвращать дефекты
+                    </p>
                   </div>
                 </div>
               </div>
@@ -458,7 +458,9 @@
     </section>
     <section class="section-advantages mb-40 p-0">
       <div class="container p-0">
-        <h2 class="section-title title-advantages">Преимущества наших программ</h2>
+        <h2 class="section-title title-advantages">
+          Преимущества наших программ
+        </h2>
         <div class="row">
           <div class="col-md-3 col-sm-4 col-6 mb-4">
             <div class="advantage-orange advantage-main-card">
@@ -476,7 +478,9 @@
           </div>
           <div class="col-md-3 col-sm-4 col-6 mb-4">
             <div class="advantage-orange advantage-main-card">
-              <p class="advantage-text font-18">Практикоориентированный подход</p>
+              <p class="advantage-text font-18">
+                Практикоориентированный подход
+              </p>
             </div>
           </div>
           <div class="col-md-3 col-sm-4 col-6 mb-4">
@@ -493,7 +497,9 @@
           </div>
           <div class="col-md-3 col-sm-4 col-6 mb-4">
             <div class="advantage-orange advantage-main-card">
-              <p class="advantage-text font-18">Онлайн и оффлайн формат обучения</p>
+              <p class="advantage-text font-18">
+                Онлайн и оффлайн формат обучения
+              </p>
             </div>
           </div>
           <div class="col-md-3 col-sm-4 col-6 mb-4">
@@ -505,7 +511,9 @@
           </div>
           <div class="col-md-3 col-sm-4 col-6 mb-4">
             <div class="advantage-orange advantage-main-card">
-              <p class="advantage-text font-18">Широкий спектр образовательных направлений</p>
+              <p class="advantage-text font-18">
+                Широкий спектр образовательных направлений
+              </p>
             </div>
           </div>
         </div>
@@ -714,11 +722,17 @@
     <footer>
       <section class="container section-footer">
         <div class="d-flex justify-content-between">
-          <p class="footer-text">
-            ООО «РХИ» — образовательные <br />
-            программы в сфере <br />
-            строительства
-          </p>
+          <div class="d-flex flex-column justify-content-between">
+            <p class="footer-text">
+              ООО «РХИ» — образовательные <br />
+              программы в сфере <br />
+              строительства
+            </p>
+            <button id="specialButton" class="eye-button">
+              <img src="img/svg/eye.svg" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" class="eye-icon"/>
+              <span>Версия для слабовидящих</span>
+            </button>
+          </div>
           <div class="d-flex flex-column gap-3">
             <p class="footer-text semibold-text">Контакты</p>
             <p class="footer-text">
