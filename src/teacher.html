@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo/mini-logo.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header
+      class="container d-flex justify-content-start gap-40 align-items-center p-0 mb-20 mt-3"
+    >
+      <a href="main.html"
+        ><img src="img/logo/logo.png" alt="logo" class="logo header-logo"
+      /></a>
+      <div class="header-nav d-flex justify-content-between align-items-center">
+        <div class="header-nav-left">
+          <a href="person.html" class="header-nav-link">Моё обучение</a>
+          <a href="teacher.html" class="header-nav-link"
+            >Кабинет преподавателя</a
+          >
+        </div>
+        <div>
+          <button
+            type="button"
+            class="icon-btn"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-html="true"
+            data-bs-content="
+            <div class='popover-menu'>
+            <a href='#' class='popover-link'>Настройки профиля</a>
+            <a href='main.html' class='popover-link'>Выйти из аккаунта</a>
+        </div>
+            "
+          >
+            <img
+              src="img/svg/avatar-icon.svg"
+              alt="avatar"
+              class="header-icon"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="flex-grow-1 container p-0">
+      <h2 class="section-title">Кабинет преподавателя</h2>
+      <div class="teacher-section">
+        <div class="homework-item">
+          <div class="homework-item-top">
+            <h2 class="homework-item-title">
+              Радиационная безопасность и радиационный контроль
+            </h2>
+            <p>Практическая работа №1</p>
+          </div>
+          <div class="homework-item-bottom">
+            <div>
+              <p>Студент: student user</p>
+            </div>
+            <a href="homework.html" class="btn-wrapper-2">
+              <button class="main-btn">
+                Взять на проверку
+                <img src="img/svg/arrow-btn.svg" alt="" width="25px" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="teacher-section">
+        <div class="homework-item">
+          <div class="homework-item-top">
+            <h2 class="homework-item-title">Электрогазосварщик</h2>
+            <p>Практическая работа №2</p>
+          </div>
+          <div class="homework-item-bottom">
+            <div>
+              <p>Студент: student user</p>
+            </div>
+            <a href="homework.html" class="btn-wrapper-2">
+              <button class="main-btn">
+                Взять на проверку
+                <img src="img/svg/arrow-btn.svg" alt="" width="25px" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="container section-footer">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex flex-column justify-content-between">
+            <p class="footer-text">
+              ООО «РХИ» — образовательные <br />
+              программы в сфере <br />
+              строительства
+            </p>
+            <button id="specialButton" class="eye-button">
+              <img
+                src="img/svg/eye.svg"
+                alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ"
+                class="eye-icon"
+              />
+              <span>Версия для слабовидящих</span>
+            </button>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <p class="footer-text semibold-text">Контакты</p>
+            <p class="footer-text">
+              +7 (495) 933 95 61<br />rhi.edu2025@gmail.com
+            </p>
+            <p class="footer-text">г. Москва, ул. Ивана Франко, д. 8</p>
+          </div>
+        </div>
+        <p class="footer-text footer-center-text">© ООО «РХИ», 2025</p>
+      </section>
+    </footer>
+  </body>
+</html>

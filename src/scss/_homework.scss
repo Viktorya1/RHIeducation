@@ -1,0 +1,80 @@
+.homework-section {
+  border-radius: $border-radius;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.homework-section-item {
+  background-color: white;
+  border-radius: $border-radius;
+  padding: 10px;
+}
+
+.homework-section-title {
+  margin: 0 0 5px 0;
+  padding: 0;
+  color: $color-orange;
+  font-size: 20px;
+}
+
+.homework-section-download {
+  display: flex;
+  gap: 15px;
+}
+
+.homework-item-left {
+  width: 40%;
+}
+
+.download-homework {
+  word-break: break-all;
+}
+
+.howework-btn-group {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+}
+
+.homework-btn-blue {
+  background-color: $color-blue;
+}
+
+.homework-btn-blue:hover {
+  background-color: $color-blue;
+}
+
+.homework-download-icon {
+  width: 18px;
+}
+
+@media (max-width: 1150px) {
+  .homework-section-title {
+    font-size: 18px;
+  }
+  .homework-item-left {
+    width: 45%;
+  }
+}
+
+@media (max-width: 992px) {
+  .homework-section-title {
+    font-size: 16px;
+  }
+  .homework-item-left {
+    width: 50%;
+  }
+}
+
+@media (max-width: 730px) {
+  .homework-section-download {
+    flex-direction: column;
+  }
+  .homework-item-left {
+    width: 100%;
+  }
+}

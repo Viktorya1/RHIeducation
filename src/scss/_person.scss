@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.header-nav-left{
+  display: flex;
+  gap: 20px;
+}
+
 .person-info-wrapper {
   margin: 0 auto;
   max-width: 25rem;
