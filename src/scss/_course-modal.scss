@@ -83,35 +83,103 @@
   width: 40%;
 }
 
-@media (max-width: 730px){
-  .advantage-modal-text{
+.modal-section-advantage {
+  padding-left: 16px;
+}
+
+.modal-advantage-orange {
+  padding: 6% 3% 3% 3%;
+  background-image: url(../img/main/modal-result-orange.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 456/165;
+  margin-right: 16px;
+}
+
+.modal-advantage-blue {
+  padding: 6% 3% 3% 3%;
+  background-image: url(../img/main/modal-resalt-blue.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 456/165;
+  margin-right: 16px;
+}
+
+.download-item{
+  text-decoration: none;
+  margin: auto 0;
+}
+
+@media (max-width: 1150px) {
+  .modal-section-advantage {
+    padding-left: 12.8px;
+  }
+  .modal-advantage-orange {
+    margin-right: 12px;
+  }
+  .modal-advantage-blue {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 992px){
+  .modal-section-advantage {
+    padding-left: 9.9px;
+  }
+  .modal-advantage-orange {
+    margin-right: 9.4px;
+  }
+  .modal-advantage-blue {
+    margin-right: 9.4px;
+  }
+}
+
+@media (max-width: 730px) {
+  .advantage-modal-text {
     font-size: 1.0897rem;
   }
 }
 
-@media (max-width: 576px){
-  .modal-advantage{
-    padding: 3.20512rem 0.6410rem 0.6410rem 0.6410rem;
+@media (max-width: 576px) {
+  .modal-advantage {
+    padding: 3.20512rem 0.641rem 0.641rem 0.641rem;
   }
-  .advantage-modal-text{
-    font-size: 1.28205rem;
+  .advantage-modal-text {
+    font-size: 11px !important;
   }
 }
 
-@media (max-width: 500px){
-  .modal-advantage{
-    padding: 2.56410rem 0.6410rem 0.6410rem 0.6410rem;
+@media (max-width: 525px){
+  .advantage-modal-text {
+    font-size: 9px !important;
   }
-  .advantage-modal-text{
+}
+
+@media (max-width: 500px) {
+  .modal-advantage {
+    padding: 2.5641rem 0.641rem 0.641rem 0.641rem;
+  }
+  .advantage-modal-text {
     font-size: 1.08974rem;
   }
-  .modal-course-description{
+  .modal-course-description {
     max-width: 100%;
   }
 }
 
-@media (max-width: 420px){
-  .modal-advantage{
-    padding: 1.92307rem 0.6410rem 0.6410rem 0.6410rem;
+@media (max-width: 470px){
+  .modal-section-advantage .col-6 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .advantage-modal-text {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal-advantage {
+    padding: 1.92307rem 0.641rem 0.641rem 0.641rem;
   }
 }
