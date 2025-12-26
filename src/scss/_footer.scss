@@ -41,6 +41,9 @@ footer {
   .eye-icon {
     height: 25px;
   }
+  .eye-text{
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 730px){
@@ -57,6 +60,9 @@ footer {
     padding: 7px;
   }
   .eye-button {
+    font-size: 12px;
+  }
+  .eye-text{
     font-size: 12px;
   }
 }
