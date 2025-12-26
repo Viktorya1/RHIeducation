@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo/mini-logo.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header
+      class="container d-flex justify-content-start gap-40 align-items-center p-0 mb-20 mt-3"
+    >
+      <a href="main.html"
+        ><img src="img/logo/logo.png" alt="logo" class="logo header-logo"
+      /></a>
+      <div class="navbar-expand-lg header-nav">
+        <button
+          class="navbar-toggler burger-btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="img/svg/burger-icon.svg" alt="burger-icon" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-lg-0 flex-nav">
+            <li class="nav-item">
+              <a href="person.html" class="header-nav-link">Моё обучение</a>
+            </li>
+            <li class="nav-item">
+              <a href="teacher.html" class="header-nav-link"
+                >Кабинет преподавателя</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li class="header-icon-pop">
+              <button
+                type="button"
+                class="icon-btn"
+                data-bs-container="body"
+                data-bs-toggle="popover"
+                data-bs-placement="bottom"
+                data-bs-html="true"
+                data-bs-content="
+            <div class='popover-menu'>
+            <a href='#' class='popover-link'>Настройки профиля</a>
+            <a href='main.html' class='popover-link'>Выйти из аккаунта</a>
+        </div>
+            "
+              >
+                <img
+                  src="img/svg/avatar-icon.svg"
+                  alt="avatar"
+                  class="header-icon"
+                />
+              </button>
+            </li>
+            <li class="nav-item popover-header-item divider">
+              <a href="#" class="header-nav-link">Настройки профиля</a>
+            </li>
+            <li class="nav-item popover-header-item">
+              <a href="#" class="header-nav-link">Выйти из аккаунта </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="flex-grow-1 container p-0">
+      <div>
+        <div class="main-homework-title">
+          <a href="course.html">
+            <img
+              src="img/svg/lesson-arrow.svg"
+              alt="arrow"
+              width="40px"
+              class="lesson-arrow sent-homework-arrow"
+            />
+          </a>
+          <div>
+            <h2>Практическая работа №1</h2>
+            <p>
+              Практическое задание №1, направленное на закрепление теоретических
+              знаний, полученных в ходе прохождения курса
+            </p>
+          </div>
+        </div>
+        <div class="sent-homework-main">
+          <div class="title-with-icon">
+            <img src="img/svg/check_homework.svg" alt="sent-icon" class="icon-check-homework"/>
+            <h2>Домашнее задание отправлено</h2>
+          </div>
+          <div class="sent-homework-text">
+            Ожидайте проверку задания преподавателем, если преподаватель примет
+            ваше решение, то вы сможете перейти к следующим урокам и заданиям
+            курса
+          </div>
+          <div class="sent-homework-text text-orange">
+            Если преподаватель отклонит ваше решение - потребуется исправить его
+            и отправить на повторную проверку
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="container section-footer">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex flex-column justify-content-between">
+            <p class="footer-text">
+              ООО «РХИ» — образовательные <br />
+              программы в сфере <br />
+              строительства
+            </p>
+            <button id="specialButton" class="eye-button">
+              <img
+                src="img/svg/eye.svg"
+                alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ"
+                class="eye-icon"
+              />
+              <span class="eye-text">Версия для слабовидящих</span>
+            </button>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <p class="footer-text semibold-text">Контакты</p>
+            <p class="footer-text">
+              +7 (495) 933 95 61<br />rhi.edu2025@gmail.com
+            </p>
+            <p class="footer-text">г. Москва, ул. Ивана Франко, д. 8</p>
+          </div>
+        </div>
+        <p class="footer-text footer-center-text">© ООО «РХИ», 2025</p>
+      </section>
+    </footer>
+  </body>
+</html>

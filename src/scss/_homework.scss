@@ -58,6 +58,39 @@
   gap: 20px;
 }
 
+.main-homework-title {
+  display: flex;
+  gap: 15px;
+}
+
+.sent-homework-arrow {
+  padding-top: 9px;
+}
+
+.title-with-icon {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.title-with-icon h2 {
+  font-weight: 700;
+  max-width: 350px;
+}
+
+.sent-homework-text {
+  color: $color-blue;
+  max-width: 600px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.text-orange {
+  color: $color-orange;
+}
+
 @media (max-width: 1150px) {
   .homework-section-title {
     font-size: 18px;
@@ -74,6 +107,12 @@
   .homework-item-left {
     width: 50%;
   }
+  .icon-check-homework {
+    width: 80px;
+  }
+  .sent-homework-text {
+    max-width: 450px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -82,5 +121,24 @@
   }
   .homework-item-left {
     width: 100%;
+  }
+  .icon-check-homework {
+    width: 70px;
+  }
+  .title-with-icon {
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .title-with-icon h2 {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 470px){
+  .sent-homework-text{
+    max-width: 380px;
+  }
+  .title-with-icon h2 {
+    max-width: 220px;
   }
 }
