@@ -1,9 +1,14 @@
-.header-nav{
-    background-color: $color-blue;
-    border-radius: 0.9375rem;
-    width: 100%;
-    padding: 1.0625rem 1.5rem;
-    max-height: 3.4375rem;
+.header-nav {
+  background-color: $color-blue;
+  border-radius: 0.9375rem;
+  width: 100%;
+  padding: 1.0625rem 1.5rem;
+  max-height: 3.4375rem;
+}
+
+.flex-nav {
+  display: flex;
+  gap: 15px;
 }
 
 .header-nav-link {
@@ -13,44 +18,101 @@
   font-weight: 500;
 }
 
-.header-icon{
-    width: 1.375rem;
-    cursor: pointer;
+.header-icon {
+  width: 1.375rem;
+  cursor: pointer;
 }
 
-.icon-btn{
+.icon-btn {
   background: none;
   border: none;
+  padding: 0;
 }
 
-.popover-menu{
+.popover-menu {
   display: flex;
   flex-direction: column;
   font-size: 0.9375rem;
 }
 
-.popover-menu a{
+.popover-menu a {
   text-decoration: none;
   color: $color-blue;
 }
 
 .popover {
-    border: 1px solid #e0e0e0;
-    border-radius: 0.9375rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+  border-radius: 0.9375rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 730px){
-  .header-logo{
+.burger-btn {
+  border: none;
+}
+
+.burger-btn:focus,
+.burger-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+#navbarTogglerDemo02.show {
+  background-color: $color-blue;
+  border-radius: 0.9375rem;
+  width: 100%;
+  padding: 1.0625rem 1.5rem;
+}
+
+.popover-header-item {
+  display: none;
+}
+
+@media (max-width: 730px) {
+  .header-logo {
     width: 100px;
   }
-  .header-nav-link{
+  .header-nav-link {
     font-size: 1.60256rem;
   }
-  .header-icon{
-    width: 1,6666rem;
+  .header-icon {
+    width: 1, 6666rem;
   }
-  .header-nav{
+  .header-nav {
     max-height: 3.84615rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .burger-btn {
+    float: right;
+    padding-top: 10.6px;
+    padding-right: 15px;
+  }
+  .header-nav {
+    padding: 0 0;
+    height: 34.31px;
+    width: 630px;
+    z-index: 4;
+  }
+  .header-icon-pop {
+    display: none;
+  }
+  .popover-header-item {
+    display: block;
+  }
+  .flex-nav {
+    gap: 0px;
+  }
+  .divider {
+    border-top: 1px solid #9EB2C3; /* Белая линия во всю ширину */
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+  .nav-item{
+    padding-bottom: 5px;
   }
 }
