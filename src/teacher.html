@@ -22,38 +22,62 @@
       <a href="main.html"
         ><img src="img/logo/logo.png" alt="logo" class="logo header-logo"
       /></a>
-      <div class="header-nav d-flex justify-content-between align-items-center">
-        <div class="header-nav-left">
-          <a href="person.html" class="header-nav-link">Моё обучение</a>
-          <a href="teacher.html" class="header-nav-link"
-            >Кабинет преподавателя</a
-          >
-        </div>
-        <div>
-          <button
-            type="button"
-            class="icon-btn"
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            data-bs-html="true"
-            data-bs-content="
+      <div class="navbar-expand-lg header-nav">
+        <button
+          class="navbar-toggler burger-btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="img/svg/burger-icon.svg" alt="burger-icon" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-lg-0 flex-nav">
+            <li class="nav-item">
+              <a href="person.html" class="header-nav-link">Моё обучение</a>
+            </li>
+            <li class="nav-item">
+              <a href="teacher.html" class="header-nav-link"
+                >Кабинет преподавателя</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li class="header-icon-pop">
+              <button
+                type="button"
+                class="icon-btn"
+                data-bs-container="body"
+                data-bs-toggle="popover"
+                data-bs-placement="bottom"
+                data-bs-html="true"
+                data-bs-content="
             <div class='popover-menu'>
             <a href='#' class='popover-link'>Настройки профиля</a>
             <a href='main.html' class='popover-link'>Выйти из аккаунта</a>
         </div>
             "
-          >
-            <img
-              src="img/svg/avatar-icon.svg"
-              alt="avatar"
-              class="header-icon"
-            />
-          </button>
+              >
+                <img
+                  src="img/svg/avatar-icon.svg"
+                  alt="avatar"
+                  class="header-icon"
+                />
+              </button>
+            </li>
+            <li class="nav-item popover-header-item divider">
+              <a href="#" class="header-nav-link">Настройки профиля</a>
+            </li>
+            <li class="nav-item popover-header-item">
+              <a href="#" class="header-nav-link">Выйти из аккаунта </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-
     <section class="flex-grow-1 container p-0">
       <h2 class="section-title">Кабинет преподавателя</h2>
       <div class="teacher-section">
@@ -63,6 +87,7 @@
               Радиационная безопасность и радиационный контроль
             </h2>
             <p>Практическая работа №1</p>
+            <div class="info-dz">Новая</div>
           </div>
           <div class="homework-item-bottom">
             <div>
@@ -82,6 +107,7 @@
           <div class="homework-item-top">
             <h2 class="homework-item-title">Электрогазосварщик</h2>
             <p>Практическая работа №2</p>
+            <div class="info-dz">Исправления</div>
           </div>
           <div class="homework-item-bottom">
             <div>
