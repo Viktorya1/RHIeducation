@@ -91,12 +91,80 @@
   color: $color-orange;
 }
 
+.comment-textarea{
+  border: none;
+  border-radius: $border-radius;
+  min-height: 100px;
+  padding: 10px;
+}
+
+.comment-textarea:focus{
+  border: 2px solid $color-blue;
+  outline: none;
+}
+
+.comment-btn{
+  display: block;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.comment{
+  border: 2px solid $color-blue;
+  padding: 15px;
+  border-radius: $border-radius;
+  margin-bottom: 20px;
+}
+
+.user-comment{
+  font-size: 20px;
+  color: $color-orange;
+  font-weight: 600;
+}
+
+.user-comment-date{
+  font-size: 18px;
+  color: $color-blue;
+  font-weight: 200;
+}
+
+.comment-text{
+  font-size: 18px;
+  color: $color-blue;
+  margin-top: 20px;
+}
+
+.comment-title{
+  margin-bottom: 20px;
+}
+
+.file-homework-title{
+  margin-bottom: 10px;
+}
+
+.file-homework{
+  color: $color-blue;
+}
+
 @media (max-width: 1150px) {
   .homework-section-title {
     font-size: 18px;
   }
   .homework-item-left {
     width: 45%;
+  }
+  .homework-section h3, .comment-title{
+    font-size: 20px;
+  }
+  .user-comment{
+    font-size: 18px;
+  }
+  .user-comment-date{
+    font-size: 16px;
+  }
+  .comment-text{
+    font-size: 16px;
+    margin-top: 15px;
   }
 }
 
