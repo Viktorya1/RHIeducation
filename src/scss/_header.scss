@@ -71,6 +71,10 @@
   display: none;
 }
 
+.dropdown-menu{
+  border-radius: 10px;
+}
+
 @media (max-width: 730px) {
   .header-logo {
     width: 100px;

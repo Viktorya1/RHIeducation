@@ -46,29 +46,22 @@
               </li>
             </ul>
             <ul>
-              <li class="header-icon-pop">
-                <button
-                  type="button"
-                  class="icon-btn"
-                  data-bs-container="body"
-                  data-bs-toggle="popover"
-                  data-bs-placement="bottom"
-                  data-bs-html="true"
-                  data-bs-content="
-            <div class='popover-menu'>
-            <a href='#' class='popover-link'>Настройки профиля</a>
-            <a href='main.html' class='popover-link'>Выйти из аккаунта</a>
-        </div>
-            "
-                >
+              <li class="nav-item dropdown d-none d-lg-block">
+                  <a class="nav-link dropdown-toggle icon-btn" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                   <img
                     src="img/svg/avatar-icon.svg"
                     alt="avatar"
                     class="header-icon"
                   />
-                </button>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a href="#" class="dropdown-item">Настройки профиля</a></li>
+                    <li><a href="main.html" class="dropdown-item">Выйти из аккаунта</a></li>
+                  </ul>
 
-              </li>
+                </li>
               <li class="nav-item popover-header-item divider">
                 <a href="#" class="header-nav-link">Настройки профиля</a>
               </li>
