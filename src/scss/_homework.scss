@@ -91,59 +91,118 @@
   color: $color-orange;
 }
 
-.comment-textarea{
+.comment-textarea {
   border: none;
   border-radius: $border-radius;
   min-height: 100px;
   padding: 10px;
 }
 
-.comment-textarea:focus{
+.comment-textarea:focus {
   border: 2px solid $color-blue;
   outline: none;
 }
 
-.comment-btn{
+.comment-btn {
   display: block;
   max-width: 270px;
   margin: 0 auto;
 }
 
-.comment{
-  border: 2px solid $color-blue;
+.comment {
+  border: 2px solid #8ba7bf;
   padding: 15px;
   border-radius: $border-radius;
   margin-bottom: 20px;
+  width: 60%;
 }
 
-.user-comment{
+.comment-right {
+  margin-left: auto;
+}
+
+.comment-image{
+  max-width: 80%;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.user-comment {
   font-size: 20px;
   color: $color-orange;
   font-weight: 600;
 }
 
-.user-comment-date{
+.user-comment-date {
   font-size: 18px;
   color: $color-blue;
   font-weight: 200;
 }
 
-.comment-text{
+.comment-text {
   font-size: 18px;
   color: $color-blue;
   margin-top: 20px;
 }
 
-.comment-title{
+.comment-title {
   margin-bottom: 20px;
 }
 
-.file-homework-title{
+.file-homework-title {
   margin-bottom: 10px;
 }
 
-.file-homework{
+.file-homework {
   color: $color-blue;
+}
+
+.file-homework-form {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.comment-of-student {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dee2e6;
+  border-radius: $border-radius;
+  padding: 12px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.comment-of-student:focus {
+  outline: none;
+  border-color: $color-blue;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.separator {
+  border: none;
+  height: 2px;
+  background-color: $color-blue;
+  margin: 20px 0;
+}
+
+.attached-files{
+  border-radius: $border-radius;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.download-item-wrapper{
+  border-radius: $border-radius;
+  background-color: white;
+  padding: 10px;
+}
+
+.accept-btn{
+  margin: 20px auto 0 auto;
 }
 
 @media (max-width: 1150px) {
@@ -153,16 +212,17 @@
   .homework-item-left {
     width: 45%;
   }
-  .homework-section h3, .comment-title{
+  .homework-section h3,
+  .comment-title {
     font-size: 20px;
   }
-  .user-comment{
+  .user-comment {
     font-size: 18px;
   }
-  .user-comment-date{
+  .user-comment-date {
     font-size: 16px;
   }
-  .comment-text{
+  .comment-text {
     font-size: 16px;
     margin-top: 15px;
   }
@@ -180,6 +240,9 @@
   }
   .sent-homework-text {
     max-width: 450px;
+  }
+  .separator {
+    height: 1px;
   }
 }
 
@@ -200,13 +263,43 @@
   .title-with-icon h2 {
     max-width: 250px;
   }
+  .user-comment {
+    font-size: 16px;
+  }
+  .user-comment-date {
+    font-size: 12px;
+  }
+  .comment-text {
+    font-size: 14px;
+  }
+  .homework-section {
+    padding: 15px;
+  }
 }
 
-@media (max-width: 470px){
-  .sent-homework-text{
+@media (max-width: 470px) {
+  .sent-homework-text {
     max-width: 380px;
   }
   .title-with-icon h2 {
-    max-width: 220px;
+    max-width: 180px;
+    font-size: 16px;
+  }
+  .comment {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .icon-check-homework {
+    width: 50px;
+  }
+  .title-with-icon {
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .sent-homework-text, .file-homework-title, .comment-btn{
+    font-size: 12px;
+  }
+  .main-homework-title p{
+    font-size: 12px;
   }
 }

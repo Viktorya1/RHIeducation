@@ -101,30 +101,47 @@
           </div>
         </div>
         <div class="sent-homework-main">
-          <div class="title-with-icon">
+          <div class="title-with-icon text-orange">
             <img
-              src="img/svg/check_homework.svg"
+              src="img/svg/rejected_homework.svg"
               alt="sent-icon"
               class="icon-check-homework"
             />
-            <h2>Домашнее задание на проверке преподавателем</h2>
+            <h2>Работа отклонена преподавателем</h2>
           </div>
           <div class="sent-homework-text">
-            Ожидайте проверку задания преподавателем, если преподаватель примет
-            ваше решение, то вы сможете перейти к следующим урокам и заданиям
-            курса
-          </div>
-          <div class="sent-homework-text text-orange">
-            Если преподаватель отклонит ваше решение - потребуется исправить его
-            и отправить на повторную проверку
+            Исправьте работу в соответсвие с комментарием преподавателя и
+            оправьте на повторную проверку, загрузите новые версии файлов с
+            домашним заданием
           </div>
         </div>
+        <div class="file-homework-form">
+          <p class="file-homework-title">
+            Приложите файлы с выполненными заданиями
+          </p>
+          <div class="input-group">
+            <input
+              type="file"
+              class="form-control file-homework"
+              id="simpleFile"
+            />
+          </div>
+        </div>
+        <div class="file-homework-form">
+          <p class="file-homework-title">
+            Сопроводите домашнюю работу комментарием для преподавателя
+          </p>
+          <textarea
+            name="comment-of-student"
+            id=""
+            class="comment-of-student"
+          ></textarea>
+        </div>
+        <button class="main-btn comment-btn">Отправить задание</button>
+        <div>
+          <hr class="separator" />
+        </div>
       </div>
-
-      <div>
-        <hr class="separator" />
-      </div>
-
       <div class="homework-section">
         <h3>Добавить комментарий</h3>
         <textarea name="comment" id="" class="comment-textarea"></textarea>

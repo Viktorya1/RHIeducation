@@ -100,31 +100,62 @@
             </p>
           </div>
         </div>
-        <div class="sent-homework-main">
-          <div class="title-with-icon">
-            <img
-              src="img/svg/check_homework.svg"
-              alt="sent-icon"
-              class="icon-check-homework"
-            />
-            <h2>Домашнее задание на проверке преподавателем</h2>
+
+        <div class="attached-files">
+          <h5>Прикрепленные файлы</h5>
+          <div class="download-item-wrapper">
+            <a href="" download="Файл_преподавателя.pdf" class="download-item">
+              <div class="download-course download-homework">
+                <img
+                  src="img/svg/download.svg"
+                  alt="download"
+                  class="download-icon homework-download-icon"
+                />
+                <p>Файл_преподавателя1.pdf</p>
+              </div>
+            </a>
           </div>
-          <div class="sent-homework-text">
-            Ожидайте проверку задания преподавателем, если преподаватель примет
-            ваше решение, то вы сможете перейти к следующим урокам и заданиям
-            курса
-          </div>
-          <div class="sent-homework-text text-orange">
-            Если преподаватель отклонит ваше решение - потребуется исправить его
-            и отправить на повторную проверку
+          <div class="download-item-wrapper">
+            <a href="" download="Файл_преподавателя.pdf" class="download-item">
+              <div class="download-course download-homework">
+                <img
+                  src="img/svg/download.svg"
+                  alt="download"
+                  class="download-icon homework-download-icon"
+                />
+                <p>Файл_преподавателя2.pdf</p>
+              </div>
+            </a>
           </div>
         </div>
-      </div>
 
-      <div>
-        <hr class="separator" />
+        <div class="file-homework-form">
+          <p class="file-homework-title">
+            Приложите файлы с выполненными заданиями
+          </p>
+          <div class="input-group">
+            <input
+              type="file"
+              class="form-control file-homework"
+              id="simpleFile"
+            />
+          </div>
+        </div>
+        <div class="file-homework-form">
+          <p class="file-homework-title">
+            Сопроводите домашнюю работу комментарием для преподавателя
+          </p>
+          <textarea
+            name="comment-of-student"
+            id=""
+            class="comment-of-student"
+          ></textarea>
+        </div>
+        <button class="main-btn comment-btn">Отправить задание</button>
+        <div>
+          <hr class="separator" />
+        </div>
       </div>
-
       <div class="homework-section">
         <h3>Добавить комментарий</h3>
         <textarea name="comment" id="" class="comment-textarea"></textarea>

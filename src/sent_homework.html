@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -17,61 +17,69 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header
-        class="container d-flex justify-content-start gap-40 align-items-center p-0 mb-20 mt-3"
-      >
-        <a href="main.html"
-          ><img src="img/logo/logo.png" alt="logo" class="logo header-logo"
-        /></a>
-        <div class="navbar-expand-lg header-nav">
-          <button
-            class="navbar-toggler burger-btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="img/svg/burger-icon.svg" alt="burger-icon" />
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-lg-0 flex-nav">
-              <li class="nav-item">
-                <a href="person.html" class="header-nav-link">Моё обучение</a>
-              </li>
-              <li class="nav-item">
-                <a href="teacher.html" class="header-nav-link"
-                  >Кабинет преподавателя</a
-                >
-              </li>
-            </ul>
-            <ul>
-                <li class="nav-item dropdown d-none d-lg-block">
-                  <a class="nav-link dropdown-toggle icon-btn" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                  <img
-                    src="img/svg/avatar-icon.svg"
-                    alt="avatar"
-                    class="header-icon"
-                  />
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a href="#" class="dropdown-item">Настройки профиля</a></li>
-                    <li><a href="main.html" class="dropdown-item">Выйти из аккаунта</a></li>
-                  </ul>
-
+      class="container d-flex justify-content-start gap-40 align-items-center p-0 mb-20 mt-3"
+    >
+      <a href="main.html"
+        ><img src="img/logo/logo.png" alt="logo" class="logo header-logo"
+      /></a>
+      <div class="navbar-expand-lg header-nav">
+        <button
+          class="navbar-toggler burger-btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="img/svg/burger-icon.svg" alt="burger-icon" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-lg-0 flex-nav">
+            <li class="nav-item">
+              <a href="person.html" class="header-nav-link">Моё обучение</a>
+            </li>
+            <li class="nav-item">
+              <a href="teacher.html" class="header-nav-link"
+                >Кабинет преподавателя</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle icon-btn"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="img/svg/avatar-icon.svg"
+                  alt="avatar"
+                  class="header-icon"
+                />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item">Настройки профиля</a></li>
+                <li>
+                  <a href="main.html" class="dropdown-item"
+                    >Выйти из аккаунта</a
+                  >
                 </li>
-              <li class="nav-item popover-header-item divider">
-                <a href="#" class="header-nav-link">Настройки профиля</a>
-              </li>
-              <li class="nav-item popover-header-item">
-                <a href="#" class="header-nav-link">Выйти из аккаунта </a>
-              </li>
-            </ul>
-          </div>
+              </ul>
+            </li>
+            <li class="nav-item popover-header-item divider">
+              <a href="#" class="header-nav-link">Настройки профиля</a>
+            </li>
+            <li class="nav-item popover-header-item">
+              <a href="#" class="header-nav-link">Выйти из аккаунта </a>
+            </li>
+          </ul>
         </div>
-      </header>
+      </div>
+    </header>
 
     <section class="flex-grow-1 container p-0">
       <div>
@@ -94,7 +102,11 @@
         </div>
         <div class="sent-homework-main">
           <div class="title-with-icon">
-            <img src="img/svg/check_homework.svg" alt="sent-icon" class="icon-check-homework"/>
+            <img
+              src="img/svg/check_homework.svg"
+              alt="sent-icon"
+              class="icon-check-homework"
+            />
             <h2>Домашнее задание отправлено</h2>
           </div>
           <div class="sent-homework-text">
@@ -105,6 +117,47 @@
           <div class="sent-homework-text text-orange">
             Если преподаватель отклонит ваше решение - потребуется исправить его
             и отправить на повторную проверку
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <hr class="separator" />
+      </div>
+
+      <div class="homework-section">
+        <h3>Добавить комментарий</h3>
+        <textarea name="comment" id="" class="comment-textarea"></textarea>
+        <button class="main-btn comment-btn">Создать комментарий</button>
+      </div>
+      <div>
+        <h3 class="comment-title">Комментарии к домашнему заданию</h3>
+        <div class="comment">
+          <div class="comment-content">
+            <div>
+              <p class="user-comment">Student User</p>
+              <p class="user-comment-date">Пт, 26 дек. 2025, 14:24:41</p>
+            </div>
+            <p class="comment-text">Необходимо переделать домашнюю работу</p>
+            <img src="img/course/course-3.png" alt="" class="comment-image">
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-content">
+            <div>
+              <p class="user-comment">Student User</p>
+              <p class="user-comment-date">Пт, 26 дек. 2025, 14:24:41</p>
+            </div>
+            <p class="comment-text">Переделать, много ошибок</p>
+          </div>
+        </div>
+        <div class="comment comment-right">
+          <div class="comment-content">
+            <div>
+              <p class="user-comment">Student</p>
+              <p class="user-comment-date">Пт, 26 дек. 2025, 16:35:60</p>
+            </div>
+            <p class="comment-text">Домашняя работа будет переделана</p>
           </div>
         </div>
       </div>
