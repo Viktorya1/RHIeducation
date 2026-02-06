@@ -16,73 +16,53 @@
     <script type="module" src="./js/main.js"></script>
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <header
-      class="container d-flex justify-content-start gap-40 align-items-center p-0 mb-20 mt-3"
-    >
-      <a href="main.html"
-        ><img src="img/logo/logo.png" alt="logo" class="logo header-logo"
-      /></a>
+    <header class="container d-flex justify-content-start gap-40 align-items-center p-0 mb-20 mt-3">
+
+      <a href="main.html"><img src="img/logo/logo.png" alt="logo" class="logo header-logo"/></a>
+      
       <div class="navbar-expand-lg header-nav">
-        <button
-          class="navbar-toggler burger-btn"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+
+        <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <img src="img/svg/burger-icon.svg" alt="burger-icon" />
         </button>
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-lg-0 flex-nav">
-            <li class="nav-item">
-              <a href="person.html" class="header-nav-link">Моё обучение</a>
-            </li>
-            <li class="nav-item">
-              <a href="teacher.html" class="header-nav-link"
-                >Кабинет преподавателя</a
-              >
-            </li>
-          </ul>
-          <ul>
-            <li class="nav-item dropdown d-none d-lg-block">
-              <a
-                class="nav-link dropdown-toggle icon-btn"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="img/svg/avatar-icon.svg"
-                  alt="avatar"
-                  class="header-icon"
-                />
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a href="person.html" class="dropdown-item"
-                    >Настройки профиля</a
-                  >
-                </li>
-                <li>
-                  <a href="main.html" class="dropdown-item"
-                    >Выйти из аккаунта</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item popover-header-item divider">
-              <a href="#" class="header-nav-link">Настройки профиля</a>
-            </li>
-            <li class="nav-item popover-header-item">
-              <a href="#" class="header-nav-link">Выйти из аккаунта </a>
-            </li>
-          </ul>
+
+            <ul class="navbar-nav me-auto mb-lg-0 flex-nav">
+              <li class="nav-item">
+                <a href="person.html" class="header-nav-link">Моё обучение</a>
+              </li>
+              <li class="nav-item">
+                <a href="teacher.html" class="header-nav-link">Кабинет преподавателя</a>
+              </li>
+            </ul>
+          
+            <ul>
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a class="nav-link dropdown-toggle dropdown-custom-menu icon-btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/person/avatar.png" alt="avatar" class="header-avatar"/>
+                  <p>victoryaaam@mail.ru</p>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a href="profile.html" class="dropdown-item">Настройки профиля</a>
+                  </li>
+                  <li>
+                    <a href="main.html" class="dropdown-item">Выйти из аккаунта</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item popover-header-item divider">
+                <a href="profile.html" class="header-nav-link">Настройки профиля</a>
+              </li>
+              <li class="nav-item popover-header-item">
+                <a href="#" class="header-nav-link">Выйти из аккаунта </a>
+              </li>
+            </ul>
+            
+          </div>
+          
         </div>
-      </div>
     </header>
 
     <section class="flex-grow-1 container p-0">

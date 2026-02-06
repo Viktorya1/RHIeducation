@@ -2,8 +2,11 @@
   background-color: $color-blue;
   border-radius: 0.9375rem;
   width: 100%;
-  padding: 1.0625rem 1.5rem;
-  max-height: 3.4375rem;
+  padding: 0 1.5rem;
+  min-height: 3.4375rem;
+
+  display: flex;
+  align-items: center; 
 }
 
 .flex-nav {
@@ -18,9 +21,12 @@
   font-weight: 500;
 }
 
-.header-icon {
-  width: 1.375rem;
+.header-avatar {
+  width: 40px;
   cursor: pointer;
+  border-radius: 50%;
+  height: 40px;
+  object-fit: cover;
 }
 
 .icon-btn {
@@ -67,12 +73,44 @@
   padding: 1.0625rem 1.5rem;
 }
 
+.dropdown-custom-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .popover-header-item {
   display: none;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   border-radius: 10px;
+  width: 100%;
+}
+
+.dropdown-custom-menu:hover,
+.dropdown-custom-menu:focus {
+  color: white !important;
+}
+
+.custom-navbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+@media (max-width: 1395px) {
+  .header-avatar {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 1395px) {
+  .header-avatar {
+    width: 33px;
+    height: 33px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -91,6 +129,9 @@
 }
 
 @media (max-width: 993px) {
+  .header-nav {
+    display: block;
+  }
   .burger-btn {
     float: right;
     padding-top: 10.6px;
@@ -112,11 +153,11 @@
     gap: 0px;
   }
   .divider {
-    border-top: 1px solid #9EB2C3; /* Белая линия во всю ширину */
+    border-top: 1px solid #9eb2c3; /* Белая линия во всю ширину */
     padding-top: 5px;
     margin-top: 5px;
   }
-  .nav-item{
+  .nav-item {
     padding-bottom: 5px;
   }
 }
