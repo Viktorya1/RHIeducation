@@ -62,7 +62,11 @@
                 />
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a href="profile.html" class="dropdown-item">Настройки профиля</a></li>
+                <li>
+                  <a href="person.html" class="dropdown-item"
+                    >Настройки профиля</a
+                  >
+                </li>
                 <li>
                   <a href="main.html" class="dropdown-item"
                     >Выйти из аккаунта</a
@@ -71,7 +75,7 @@
               </ul>
             </li>
             <li class="nav-item popover-header-item divider">
-              <a href="profile.html" class="header-nav-link">Настройки профиля</a>
+              <a href="#" class="header-nav-link">Настройки профиля</a>
             </li>
             <li class="nav-item popover-header-item">
               <a href="#" class="header-nav-link">Выйти из аккаунта </a>
@@ -82,83 +86,83 @@
     </header>
 
     <section class="flex-grow-1 container p-0">
-      <div>
-        <div class="main-homework-title">
-          <a href="course.html">
-            <img
-              src="img/svg/lesson-arrow.svg"
-              alt="arrow"
-              width="40px"
-              class="lesson-arrow sent-homework-arrow"
-            />
-          </a>
-          <div>
-            <h2>Практическая работа №1</h2>
-            <p>
-              Практическое задание №1, направленное на закрепление теоретических
-              знаний, полученных в ходе прохождения курса
-            </p>
-          </div>
-        </div>
-        <div class="sent-homework-main">
-          <div class="title-with-icon">
-            <img
-              src="img/svg/check_homework.svg"
-              alt="sent-icon"
-              class="icon-check-homework"
-            />
-            <h2>Домашнее задание на проверке преподавателем</h2>
-          </div>
-          <div class="sent-homework-text">
-            Ожидайте проверку задания преподавателем, если преподаватель примет
-            ваше решение, то вы сможете перейти к следующим урокам и заданиям
-            курса
-          </div>
-          <div class="sent-homework-text text-orange">
-            Если преподаватель отклонит ваше решение - потребуется исправить его
-            и отправить на повторную проверку
-          </div>
-        </div>
+      <div class="profile-title">
+        <a href="person.html">
+          <img
+            src="img/svg/lesson-arrow.svg"
+            alt="arrow"
+            width="40px"
+            class="lesson-arrow"
+          />
+        </a>
+        <h2>Редактировать профиль</h2>
       </div>
 
-      <div>
-        <hr class="separator" />
-      </div>
-
-      <div class="homework-section">
-        <h3>Добавить комментарий</h3>
-        <textarea name="comment" id="" class="comment-textarea"></textarea>
-        <button class="main-btn comment-btn">Создать комментарий</button>
-      </div>
-      <div>
-        <h3 class="comment-title">Комментарии к домашнему заданию</h3>
-        <div class="comment">
-          <div class="comment-content">
-            <div>
-              <p class="user-comment">Student User</p>
-              <p class="user-comment-date">Пт, 26 дек. 2025, 14:24:41</p>
-            </div>
-            <p class="comment-text">Необходимо переделать домашнюю работу</p>
-            <img src="img/course/course-2.png" alt="" class="comment-image">
-          </div>
+      <div class="profile-settings-wrapper">
+        <div class="profile-photo-settings">
+          <img src="img/person/avatar.png" alt="avatar" class="img-rounded" />
         </div>
-        <div class="comment">
-          <div class="comment-content">
-            <div>
-              <p class="user-comment">Student User</p>
-              <p class="user-comment-date">Пт, 26 дек. 2025, 14:24:41</p>
-            </div>
-            <p class="comment-text">Переделать, много ошибок</p>
+        <div class="profile-settings">
+          <div class="mb-3 file optional user_profile_avatar">
+            <label class="form-label file optional" for="user_profile_avatar"
+              >Фото профиля</label
+            >
+            <input
+              class="form-control file optional"
+              type="file"
+              name="user_profile[avatar]"
+              id="user_profile_avatar"
+            />
           </div>
-        </div>
-        <div class="comment comment-right">
-          <div class="comment-content">
-            <div>
-              <p class="user-comment">Student</p>
-              <p class="user-comment-date">Пт, 26 дек. 2025, 16:35:60</p>
-            </div>
-            <p class="comment-text">Домашняя работа будет переделана</p>
+          <div class="mb-3 string optional user_profile_full_name">
+            <label
+              class="form-label string optional"
+              for="user_profile_full_name"
+              >Полное имя</label
+            >
+            <input
+              class="form-control string optional"
+              type="text"
+              value=""
+              name="user_profile[full_name]"
+              id="user_profile_full_name"
+            />
           </div>
+          <div class="mb-3 date optional user_profile_birth_date">
+            <label
+              class="form-label date optional"
+              for="user_profile_birth_date"
+              >Дата рождения</label
+            >
+            <input
+              type="date"
+              id="user_profile_birth_date"
+              name="user_profile[birth_date]"
+              class="form-control date optional"
+              max="<?php echo date('Y-m-d'); ?>"
+              value=""
+            />
+          </div>
+          <div class="mb-3 string optional user_profile_profession">
+            <label
+              class="form-label string optional"
+              for="user_profile_profession"
+              >Профессия</label
+            ><input
+              class="form-control string optional"
+              type="text"
+              value=""
+              name="user_profile[profession]"
+              id="user_profile_profession"
+            />
+          </div>
+          <input
+            type="submit"
+            name="commit"
+            value="Coхранить профиль"
+            class="main-btn mx-auto"
+            data-disable-with="Coхранить профиль"
+          />
         </div>
       </div>
     </section>
